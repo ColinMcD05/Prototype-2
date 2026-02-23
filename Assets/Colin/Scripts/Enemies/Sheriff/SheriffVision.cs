@@ -19,7 +19,7 @@ public class SheriffVision : MonoBehaviour
 
     // Immutable variables
     LayerMask visionMasks;
-    LayerMask playerMask;
+    LayerMask playerMask;    
 
     void Awake()
     {
@@ -33,6 +33,20 @@ public class SheriffVision : MonoBehaviour
     {
         Debug.Log(CheckIsNotHidden());
         Debug.Log(CheckInFieldOfView());
+        if (Found())
+        {
+            if (!sheriffMovement.enabled)
+            {
+                sheriffMovement.enabled = true;
+            }
+            sheriffMovement.seePlayer = true;
+            sheriffMovement.sawPlayer = true;
+        }
+        else
+        {
+            sheriffMovement.seePlayer = false;
+            sheriffMovement.sawPlayer = false;
+        }
     }
 
     // Function to check if enemy can see player
