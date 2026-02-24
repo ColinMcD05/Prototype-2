@@ -21,7 +21,7 @@ public class SheriffMovement : MonoBehaviour
     [HideInInspector]public bool sawPlayer;
     public float waitCounter;
     int currentWaypointIndex;
-    int lookDirection;
+    int lookDirection = 1;
     Quaternion lookRotation;
 
     // Immutable variables
@@ -92,5 +92,9 @@ public class SheriffMovement : MonoBehaviour
         {
             agent.SetDestination(target.position);
         }
+    }
+
+    void lastKnown()
+    {
     }
 }
