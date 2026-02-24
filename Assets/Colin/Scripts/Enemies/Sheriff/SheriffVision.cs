@@ -45,7 +45,6 @@ public class SheriffVision : MonoBehaviour
         else
         {
             sheriffMovement.seePlayer = false;
-            sheriffMovement.sawPlayer = false;
         }
     }
 
