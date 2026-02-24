@@ -77,7 +77,7 @@ public class SheriffMovement : MonoBehaviour
 
         Transform target = waypoints[currentWaypointIndex];
 
-        if ((new Vector3(transform.position.x, 0, transform.position.z) - new Vector3(target.position.x, 0, target.position.y)).sqrMagnitude < reachDistance * reachDistance)
+        if ((new Vector3(transform.position.x, 0, transform.position.z) - new Vector3(target.position.x, 0, target.position.z)).sqrMagnitude < reachDistance * reachDistance)
         {
             int nextWaypointIndex = UnityEngine.Random.Range(0, waypoints.Length);
             while(currentWaypointIndex == nextWaypointIndex)
