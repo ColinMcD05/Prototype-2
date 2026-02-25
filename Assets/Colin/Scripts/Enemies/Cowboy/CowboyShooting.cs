@@ -23,7 +23,10 @@ public class CowboyShooting : MonoBehaviour
     {
         if (Vector3.Distance(player.position, transform.position) < shootingRange && bulletAmount != 0 && shootTimer <= 0)
         {
-            Shoot();
+            Shoot(-45);
+            Shoot(0);
+            Shoot(45);
+            shootTimer = shootBufferTime;
         }
         else
         {
@@ -31,12 +34,10 @@ public class CowboyShooting : MonoBehaviour
         }
     }
 
-    void Shoot()
+    void Shoot(int angle)
     {
-        GameObject bullet = Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, 2), Quaternion.identity);
-        bullet.transform.forward = (player.position - transform.position).normalized;
+        GameObject bullet = Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, 0), Quaternion.Euler(-90, angle + Quaternion.identity.y, -90));
         bulletAmount--;
-        shootTimer = shootBufferTime;
         if (bulletAmount == 0)
         {
             GetComponent<CowboyMovement>().enabled = false;
