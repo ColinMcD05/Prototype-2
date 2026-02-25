@@ -235,7 +235,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4857729350545509582}
   - component: {fileID: 2277355383687250661}
-  - component: {fileID: 4828365920907599595}
   m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
@@ -275,15 +274,3 @@ MonoBehaviour:
   visionRange: 7.9
   detectionAngle: 41
   peripheryVision: 180
---- !u!114 &4828365920907599595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8719114896410965567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9892ec953966b1e4f989c31d5948b378, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SheriffDebug
