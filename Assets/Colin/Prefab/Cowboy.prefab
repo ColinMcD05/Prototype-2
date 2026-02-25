@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 6866742215274547021}
   - component: {fileID: 1072066063950095577}
   - component: {fileID: 7172343285905214685}
-  m_Layer: 0
+  - component: {fileID: 214970137849074176}
+  m_Layer: 6
   m_Name: Cowboy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -184,3 +185,15 @@ MonoBehaviour:
   reloadTimer: 5
   bulletAmount: 6
   shootTimer: 0
+--- !u!114 &214970137849074176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77115787715428506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18321005a46babb4f8f9deaa76f5e286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyFacePlayer

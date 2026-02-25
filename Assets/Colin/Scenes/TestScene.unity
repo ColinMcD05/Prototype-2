@@ -377,6 +377,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 529552901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &375896921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 77115787715428506, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+  m_PrefabInstance: {fileID: 1918343263}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &375896930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375896921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18321005a46babb4f8f9deaa76f5e286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyFacePlayer
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1507,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 77115787715428506, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 375896930}
   m_SourcePrefab: {fileID: 100100000, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
 --- !u!1 &1922468167
 GameObject:
@@ -1857,9 +1877,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sheriff
       objectReference: {fileID: 0}
-    - target: {fileID: 7698789067880538077, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
+    - target: {fileID: 8719114896410965567, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8848075104735938873, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
       propertyPath: waypoints.Array.size
