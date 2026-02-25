@@ -249,6 +249,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 326324324178710449, guid: daccc2177e14c434084b745aa61b3559, type: 3}
+      propertyPath: orientation
+      value: 
+      objectReference: {fileID: 176639211}
     - target: {fileID: 3401467908508214558, guid: daccc2177e14c434084b745aa61b3559, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.68881
@@ -289,6 +293,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7649696877806494232, guid: daccc2177e14c434084b745aa61b3559, type: 3}
+      propertyPath: cameraPosition
+      value: 
+      objectReference: {fileID: 922822476}
     - target: {fileID: 7953555907794454923, guid: daccc2177e14c434084b745aa61b3559, type: 3}
       propertyPath: m_Name
       value: PlayerCam
@@ -355,6 +363,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03a69ffde779cb47a98bf00f203c2b0, type: 3}
+--- !u!4 &176639211 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 979843647735129216, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+  m_PrefabInstance: {fileID: 4390125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &542542266
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +823,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03a69ffde779cb47a98bf00f203c2b0, type: 3}
+--- !u!4 &922822476 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5208928208388923894, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+  m_PrefabInstance: {fileID: 4390125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1032380744
 GameObject:
   m_ObjectHideFlags: 0
