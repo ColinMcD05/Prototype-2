@@ -1829,6 +1829,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2277355383687250661, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
+      propertyPath: visionRange
+      value: 15.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277355383687250661, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
+      propertyPath: detectionAngle
+      value: 108
+      objectReference: {fileID: 0}
     - target: {fileID: 6932710921282904193, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.85
