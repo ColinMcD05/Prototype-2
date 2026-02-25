@@ -12608,6 +12608,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2277355383687250661, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277355383687250661, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
       propertyPath: visionRange
       value: 9
       objectReference: {fileID: 0}
