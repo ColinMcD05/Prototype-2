@@ -16,7 +16,7 @@ public class CowboyShooting : MonoBehaviour
     public float reloadTimer;
 
     // Mutable variables referenced and changed in script only
-    int bulletAmount = 6;
+    public int bulletAmount = 6;
     public float shootTimer;
 
     void Update()
@@ -34,7 +34,7 @@ public class CowboyShooting : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, 2), Quaternion.identity);
-        bullet.GetComponent<Bullet>().target = (player.position - transform.position).normalized;
+        bullet.transform.forward = (player.position - transform.position).normalized;
         bulletAmount--;
         shootTimer = shootBufferTime;
         if (bulletAmount == 0)

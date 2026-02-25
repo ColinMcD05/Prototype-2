@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5313251164926547340}
   - component: {fileID: 3838774252948153599}
   - component: {fileID: 962582839487655724}
-  - component: {fileID: 7658690645443573553}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -29,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3307266369850379128}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6318326, y: 0.31747064, z: -0.31747055, w: 0.6318326}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.2, y: 1, z: -16.9}
   m_LocalScale: {x: 0.24082673, y: 0.24082673, z: 0.24082673}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -53.355}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4781989592861054410
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -129,30 +128,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   bulletSpeed: 0.5
   target: {x: 0, y: 0, z: 0}
---- !u!54 &7658690645443573553
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3307266369850379128}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0

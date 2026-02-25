@@ -1439,6 +1439,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1809185354}
+    - target: {fileID: 7172343285905214685, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172343285905214685, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: reloadTimer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7462337870334957546, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.2820244

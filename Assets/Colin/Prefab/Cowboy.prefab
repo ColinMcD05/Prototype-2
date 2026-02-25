@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 981394581695185557}
   - component: {fileID: 4115493588575913619}
   - component: {fileID: 6303220388127707676}
-  - component: {fileID: 6866742215274547021}
   - component: {fileID: 5922376564835987635}
+  - component: {fileID: 6866742215274547021}
   - component: {fileID: 1072066063950095577}
   - component: {fileID: 7172343285905214685}
   m_Layer: 0
@@ -117,20 +117,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6866742215274547021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77115787715428506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54486fa476bab64aaa28598a25e2542, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CowboyMovement
-  agent: {fileID: 5922376564835987635}
-  enemySpeed: 3
 --- !u!195 &5922376564835987635
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -153,6 +139,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6866742215274547021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77115787715428506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54486fa476bab64aaa28598a25e2542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CowboyMovement
+  agent: {fileID: 5922376564835987635}
+  enemySpeed: 3
 --- !u!114 &1072066063950095577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77115787715428506}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa6aff5c49ad4104f8b8395f79669f84, type: 3}
   m_Name: 
@@ -182,4 +182,5 @@ MonoBehaviour:
   shootingRange: 10
   shootBufferTime: 5
   reloadTimer: 5
+  bulletAmount: 6
   shootTimer: 0
