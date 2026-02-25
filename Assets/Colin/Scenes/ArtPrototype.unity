@@ -1275,8 +1275,8 @@ Transform:
   m_GameObject: {fileID: 1707402739}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00411, y: 0.5, z: -0.0436}
-  m_LocalScale: {x: 1.6395856, y: 1, z: 0.91273105}
+  m_LocalPosition: {x: 0.18508, y: 0.5, z: -0.0436}
+  m_LocalScale: {x: 1.2776471, y: 1, z: 0.91273105}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90758794}
@@ -1659,7 +1659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4122056582506965959, guid: e3e979e8d533c91419d4e44507614965, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4122056582506965959, guid: e3e979e8d533c91419d4e44507614965, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1779,7 +1779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7539809103591503215, guid: e3e979e8d533c91419d4e44507614965, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 0.59
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 7539809103591503215, guid: e3e979e8d533c91419d4e44507614965, type: 3}
       propertyPath: ShapeModule.randomPositionAmount
@@ -1791,11 +1791,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7539809103591503215, guid: e3e979e8d533c91419d4e44507614965, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7539809103591503215, guid: e3e979e8d533c91419d4e44507614965, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 15
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7539809103591503215, guid: e3e979e8d533c91419d4e44507614965, type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: 0.031590458
       objectReference: {fileID: 0}
     - target: {fileID: 7539809103591503215, guid: e3e979e8d533c91419d4e44507614965, type: 3}
       propertyPath: ShapeModule.sphericalDirectionAmount
@@ -1804,6 +1808,10 @@ PrefabInstance:
     - target: {fileID: 7539809103591503215, guid: e3e979e8d533c91419d4e44507614965, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7539809103591503215, guid: e3e979e8d533c91419d4e44507614965, type: 3}
+      propertyPath: InitialModule.randomizeRotationDirection
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1824,15 +1832,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7508629579198131548, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.92
+      value: -5.76
       objectReference: {fileID: 0}
     - target: {fileID: 7508629579198131548, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7508629579198131548, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.12
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 7508629579198131548, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
       propertyPath: m_LocalRotation.w
