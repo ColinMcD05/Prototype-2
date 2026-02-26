@@ -6,7 +6,9 @@ public class EventHandler : MonoBehaviour
     {
         if (other.CompareTag("Cart"))
         {
-            other.GetComponent<Cart>().Move();
+            Debug.Log("Boo");
+            other.GetComponentInChildren<Cart>().enabled = true;
+            other.GetComponent<Collider>().enabled = false;
         }
         else if (other.CompareTag("BarrelSpawner"))
         {

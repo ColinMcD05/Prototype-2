@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horsecarriage
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5be2c96995509a6418826d2527757668, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2085459243184815043, guid: 5be2c96995509a6418826d2527757668, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -79,5 +83,27 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5be2c96995509a6418826d2527757668, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 555102052285558154}
   m_SourcePrefab: {fileID: 100100000, guid: 5be2c96995509a6418826d2527757668, type: 3}
+--- !u!1 &7169680568134154214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5be2c96995509a6418826d2527757668, type: 3}
+  m_PrefabInstance: {fileID: 8052079533821856439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &555102052285558154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7169680568134154214}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f4b8ccd9698c345a217f8939f30b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cart
+  stopPoint: {fileID: 0}
+  cartSpeed: 6
