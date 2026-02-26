@@ -7,6 +7,8 @@ TagManager:
   - MacGuffin
   - EndGameVolume
   - Enemy
+  - Cart
+  - BarrelSpawner
   layers:
   - Default
   - TransparentFX
