@@ -17,7 +17,7 @@ public class BarrelSpawn : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             GameObject barrel = Instantiate(barrelPrefab, barrelSpawnPoint, Quaternion.identity);
-
+            barrel.GetComponent<Barrel>().enabled = true;
         }
     }
 }
