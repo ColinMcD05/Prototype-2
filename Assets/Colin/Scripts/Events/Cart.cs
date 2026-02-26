@@ -8,11 +8,9 @@ public class Cart : MonoBehaviour
     public float stopPoint;
     public float cartSpeed;
 
-    private void OnTriggerEnter(Collider other)
+    public void Move()
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Vector3.MoveTowards(transform.position, new Vector3(stopPoint, transform.position.y, transform.position.z), cartSpeed * Time.deltaTime);
-        }
+        Vector3.MoveTowards(transform.position, new Vector3(stopPoint, transform.position.y, transform.position.z), cartSpeed * Time.deltaTime);
+        Debug.Log("Moving");
     }
 }

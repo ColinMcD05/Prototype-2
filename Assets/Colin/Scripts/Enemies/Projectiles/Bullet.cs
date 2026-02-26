@@ -22,8 +22,13 @@ public class Bullet : MonoBehaviour
         transform.Translate(Vector3.up * bulletSpeed * Time.deltaTime, Space.Self);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Player death script
+        }
         Destroy(this.gameObject);
     }
 }
+

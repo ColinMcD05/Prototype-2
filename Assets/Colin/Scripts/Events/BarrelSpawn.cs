@@ -10,14 +10,11 @@ public class BarrelSpawn : MonoBehaviour
     // Mutable variables
     [Header("Mutable Variables")]
     public Vector3 barrelSpawnPoint;
-    
 
-    void OnTriggerEnter(Collider other)
+
+    public void SpawnBarrel()
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            GameObject barrel = Instantiate(barrelPrefab, barrelSpawnPoint, Quaternion.identity);
-            barrel.GetComponent<Barrel>().enabled = true;
-        }
+        GameObject barrel = Instantiate(barrelPrefab, barrelSpawnPoint, Quaternion.identity);
+        barrel.GetComponent<Barrel>().enabled = true;
     }
 }
