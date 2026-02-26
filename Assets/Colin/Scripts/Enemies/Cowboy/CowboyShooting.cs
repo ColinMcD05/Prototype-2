@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 using static UnityEngine.GraphicsBuffer;
 
 public class CowboyShooting : MonoBehaviour
@@ -21,7 +22,7 @@ public class CowboyShooting : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(player.position, transform.position) < shootingRange && bulletAmount != 0 && shootTimer <= 0)
+        if (Vector3.Distance(player.position, transform.position) < shootingRange && bulletAmount > 0 && shootTimer <= 0)
         {
             Shoot(-45);
             Shoot(0);
@@ -34,13 +35,15 @@ public class CowboyShooting : MonoBehaviour
         }
     }
 
-    void Shoot(int angle)
+    void Shoot(float angle)
     {
-        GameObject bullet = Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, 0), Quaternion.Euler(-90, angle + Quaternion.identity.y, -90));
+        angle += transform.eulerAngles.y - 90;
+        GameObject bullet = Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, 0), Quaternion.Euler(0, angle, -90));
         bulletAmount--;
-        if (bulletAmount == 0)
+        if (bulletAmount <= 0)
         {
             GetComponent<CowboyMovement>().enabled = false;
+            GetComponent<NavMeshAgent>().isStopped = true;
             Invoke("Reload", reloadTimer);
         }
     }
@@ -48,6 +51,7 @@ public class CowboyShooting : MonoBehaviour
     void Reload()
     {
         GetComponent<CowboyMovement>().enabled = true;
+        GetComponent<NavMeshAgent>().isStopped = false;
         bulletAmount = 6;
     }
 }

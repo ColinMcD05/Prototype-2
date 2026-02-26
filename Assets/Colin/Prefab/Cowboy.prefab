@@ -183,8 +183,6 @@ MonoBehaviour:
   shootingRange: 10
   shootBufferTime: 5
   reloadTimer: 5
-  bulletAmount: 6
-  shootTimer: 0
 --- !u!114 &214970137849074176
 MonoBehaviour:
   m_ObjectHideFlags: 0
