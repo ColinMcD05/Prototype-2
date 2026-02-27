@@ -182,7 +182,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3307266369850379128, guid: a74b508d60f20524d916d5f6f558af6d, type: 3}
   shootingRange: 10
   shootBufferTime: 5
-  reloadTimer: 5
+  reloadTimer: 10
 --- !u!114 &214970137849074176
 MonoBehaviour:
   m_ObjectHideFlags: 0

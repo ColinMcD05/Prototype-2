@@ -20,14 +20,14 @@ public class SheriffMovement : MonoBehaviour
     // Mutable Variables that get referenced/changed in script
     [HideInInspector]public bool seePlayer;
     [HideInInspector]public bool sawPlayer;
-    public float waitCounter;
+    float waitCounter;
     int currentWaypointIndex;
     int lookDirection = 1;
     Quaternion lookRotation;
 
     // Immutable variables
     float reachDistance = 0.1f;
-    public float lookAroundTimer = 4;
+    float lookAroundTimer = 4;
 
     private void OnEnable()
     {

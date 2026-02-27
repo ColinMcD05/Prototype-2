@@ -29,7 +29,7 @@ public class TornadoMovement : MonoBehaviour
 
         Transform target = waypoints[currentWaypoint];
 
-        transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.position.x, transform.position.y, target.position.z), moveSpeed * Time.deltaTime);
 
         if ((new Vector3(transform.position.x, 0, transform.position.z) - new Vector3(target.position.x, 0, target.position.z)).sqrMagnitude < reachDistance * reachDistance)
         {

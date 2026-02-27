@@ -1,10 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public class MoveOverTime : MonoBehaviour
+public class TornadoToMap : MonoBehaviour
 {
     public Transform targetPosition;
-    public float duration = 90f;
+    float duration = 90f;
 
     void Start()
     {

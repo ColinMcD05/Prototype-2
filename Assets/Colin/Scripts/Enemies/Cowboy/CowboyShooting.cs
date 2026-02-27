@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -15,6 +16,7 @@ public class CowboyShooting : MonoBehaviour
     [SerializeField] float shootingRange;
     public float shootBufferTime;
     public float reloadTimer;
+    public float shootSpreadTime;
 
     // Mutable variables referenced and changed in script only
     int bulletAmount = 6;
@@ -24,14 +26,24 @@ public class CowboyShooting : MonoBehaviour
     {
         if (Vector3.Distance(player.position, transform.position) < shootingRange && bulletAmount > 0 && shootTimer <= 0)
         {
-            Shoot(-45);
-            Shoot(0);
-            Shoot(45);
-            shootTimer = shootBufferTime;
+            StartCoroutine(ShootVolley());
         }
         else
         {
             shootTimer -= Time.deltaTime;
+        }
+    }
+
+    IEnumerator ShootVolley()
+    {
+        shootTimer = shootBufferTime;
+
+        float[] angles = { 45, 0, -45 };
+
+        foreach (float angle in angles)
+        {
+            Shoot(angle);
+            yield return new WaitForSeconds(0.1f);
         }
     }
 
