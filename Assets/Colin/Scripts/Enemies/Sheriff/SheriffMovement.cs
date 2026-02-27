@@ -4,9 +4,6 @@ using static UnityEngine.GraphicsBuffer;
 
 public class SheriffMovement : MonoBehaviour
 {
-    //animation - jose
-    [SerializeField] private Animator animator;
-
     // Get Sheriffs Components
     [Header("Sheriffs Components")]
     [SerializeField] NavMeshAgent agent;
@@ -43,17 +40,14 @@ public class SheriffMovement : MonoBehaviour
         if (seePlayer)
         {
             Chase();
-            animator.SetBool("isRunning", true);
         }
         else if (sawPlayer)
         {
             LookAround();
-            animator.SetBool("isRunning", false);
         }
         else
         {
             Patrol();
-            animator.SetBool("isRunning", false);
         }
     }
 

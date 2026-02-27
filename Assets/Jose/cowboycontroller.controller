@@ -11,7 +11,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1276203939854652607}
-    m_Position: {x: 240, y: 10, z: 0}
+    m_Position: {x: 200, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -32,6 +32,12 @@ AnimatorController:
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isRunning
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: isAiming
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
