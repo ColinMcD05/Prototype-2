@@ -9,12 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6932710921282904193}
-  - component: {fileID: 5899905989013226430}
-  - component: {fileID: 4440518270949747918}
+  - component: {fileID: 4989249595801642786}
+  - component: {fileID: 4391831923934643327}
+  - component: {fileID: 2182415358997408331}
+  - component: {fileID: 295004876703436974}
   - component: {fileID: 8848075104735938873}
   - component: {fileID: 6974570143427401665}
-  - component: {fileID: 4989249595801642786}
-  - component: {fileID: 295004876703436974}
+  - component: {fileID: 8490920366453151253}
   m_Layer: 0
   m_Name: Sheriff
   m_TagString: Untagged
@@ -38,84 +39,6 @@ Transform:
   - {fileID: 4857729350545509582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &5899905989013226430
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7698789067880538077}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!195 &4440518270949747918
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7698789067880538077}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 360
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &8848075104735938873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7698789067880538077}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c11b5592c1d74864bba95682cda58a76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Sheriff
-  animator: {fileID: 295004876703436974}
-  agent: {fileID: 4440518270949747918}
-  waypoints: []
-  patrolSpeed: 0
-  chaseSpeed: 0
-  seePlayer: 0
-  sawPlayer: 0
-  waitCounter: 0
-  lookAroundTimer: 4
---- !u!114 &6974570143427401665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7698789067880538077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e862f9e7f293b44980e0dff3545f74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyHitPlayer
 --- !u!212 &4989249595801642786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -174,6 +97,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &4391831923934643327
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698789067880538077}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.5203536, y: 6.1490326, z: 0.19999997}
+  m_Center: {x: -0.0014246756, y: 1.616987, z: 0}
+--- !u!195 &2182415358997408331
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698789067880538077}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 2.82
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 6.1
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!95 &295004876703436974
 Animator:
   serializedVersion: 7
@@ -196,6 +162,49 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8848075104735938873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698789067880538077}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11b5592c1d74864bba95682cda58a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sheriff
+  animator: {fileID: 295004876703436974}
+  agent: {fileID: 2182415358997408331}
+  waypoints: []
+  patrolSpeed: 4
+  chaseSpeed: 6
+  seePlayer: 0
+  sawPlayer: 0
+--- !u!114 &6974570143427401665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698789067880538077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e862f9e7f293b44980e0dff3545f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHitPlayer
+--- !u!114 &8490920366453151253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698789067880538077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18321005a46babb4f8f9deaa76f5e286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyFacePlayer
 --- !u!1 &8719114896410965567
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +215,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4857729350545509582}
   - component: {fileID: 2277355383687250661}
-  - component: {fileID: 4828365920907599595}
   m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
@@ -241,20 +249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a64d2a53ad6ad694ba621c4282183111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SheriffVision
-  agent: {fileID: 4440518270949747918}
+  agent: {fileID: 2182415358997408331}
   sheriffMovement: {fileID: 8848075104735938873}
   visionRange: 7.9
   detectionAngle: 41
   peripheryVision: 180
---- !u!114 &4828365920907599595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8719114896410965567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9892ec953966b1e4f989c31d5948b378, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SheriffDebug
