@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollection : MonoBehaviour
 {
@@ -15,8 +16,10 @@ public class PlayerCollection : MonoBehaviour
             Destroy(other.gameObject);
         }
         //Once the player collides with the end game volume and has enough macguffin's, win the game.
-        if (other.CompareTag("EndGameVolume") && (macGuffinHeld == macGuffinsNeeded))
+        if (other.CompareTag("EndGameVolume") && (macGuffinHeld >= macGuffinsNeeded))
         {
+            // Added code for now, delete/edit later
+            SceneManager.LoadScene(2);
             Debug.Log("You win!");
         }else if (other.CompareTag("EndGameVolume")&& (macGuffinHeld != macGuffinsNeeded))
         {

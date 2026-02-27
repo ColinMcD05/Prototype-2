@@ -20,6 +20,7 @@ public class CowboyMovement : MonoBehaviour
 
         // Set agent speed equal to the speed of player
         agent.speed = enemySpeed;
+        agent.updateRotation = false;
     }
 
     void Update()

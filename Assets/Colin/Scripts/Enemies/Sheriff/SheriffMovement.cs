@@ -31,6 +31,7 @@ public class SheriffMovement : MonoBehaviour
 
     private void OnEnable()
     {
+        agent.speed = chaseSpeed;
         player = GameObject.Find("Player");
     }
 
@@ -52,11 +53,19 @@ public class SheriffMovement : MonoBehaviour
 
     void Chase()
     {
+        if (agent.speed != chaseSpeed)
+        {
+            agent.speed = chaseSpeed;
+        }
         agent.SetDestination(player.transform.position);
     }
 
     void Patrol()
     {
+        if (agent.speed != patrolSpeed)
+        {
+            agent.speed = patrolSpeed;
+        }
         if (waypoints == null || waypoints.Length == 0)
         {
             return;
