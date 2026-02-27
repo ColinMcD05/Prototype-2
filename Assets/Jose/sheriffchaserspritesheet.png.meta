@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 33372fcc1c204b84fb8df8f0be59cd13
+guid: 151c399b3e777354db58dc7ab092e8af
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,45 +97,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CowboySpriteSheet_0
+      name: sheriffchaserspritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 1000
+        height: 1000
       alignment: 9
-      pivot: {x: 0.50797445, y: 0.41759694}
+      pivot: {x: 0.4902536, y: 0.28734714}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01008461b07083c41bd009962fd914b0
-      internalID: 390245284
+      spriteID: ed4bbcc9de489464c8659ffd1997780d
+      internalID: 114392662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CowboySpriteSheet_1
+      name: sheriffchaserspritesheet_1
       rect:
         serializedVersion: 2
-        x: 512
+        x: 1000
         y: 0
-        width: 512
-        height: 512
+        width: 1000
+        height: 1000
       alignment: 9
-      pivot: {x: 0.5017711, y: 0.37418}
+      pivot: {x: 0.5106328, y: 0.2882332}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e78d8841cbd696d498674bed994c8e7d
-      internalID: -494880058
+      spriteID: fe1c6d284c5c0ac48b4346e1d7debee6
+      internalID: -1626748710
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 70c737d4b39fdd14ca41d6453ecf33bc
+    spriteID: 5243e24b73a92e144a4268048441bb70
     internalID: 0
     vertices: []
     indices: 
@@ -154,10 +154,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      CowboySpriteSheet_0: 390245284
-      CowboySpriteSheet_1: -494880058
+      sheriffchaserspritesheet_0: 114392662
+      sheriffchaserspritesheet_1: -1626748710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
