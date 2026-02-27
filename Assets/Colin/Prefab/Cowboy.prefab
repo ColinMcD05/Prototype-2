@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3476741437814783563}
   - component: {fileID: 1533372293428689687}
   - component: {fileID: 4909037082597113630}
+  - component: {fileID: 7427117286502901930}
   m_Layer: 0
   m_Name: Cowboy
   m_TagString: Untagged
@@ -174,7 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54486fa476bab64aaa28598a25e2542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CowboyMovement
-  animator: {fileID: 997373228876166864}
   agent: {fileID: 3561828712065376078}
   enemySpeed: 5
 --- !u!114 &3476741437814783563
@@ -219,3 +219,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e862f9e7f293b44980e0dff3545f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitPlayer
+--- !u!114 &7427117286502901930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3084583771183865847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cd0921cce0a524497209fb6b284dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CowboyStamina
+  cowboyMovement: {fileID: 1713990071332579003}
+  agent: {fileID: 3561828712065376078}
+  stamina: 25
+  regainStaminaTime: 5
+  staminaTimer: 0

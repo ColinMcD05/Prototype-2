@@ -43,7 +43,7 @@ public class CowboyShooting : MonoBehaviour
         foreach (float angle in angles)
         {
             Shoot(angle);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(shootSpreadTime);
         }
     }
 
@@ -64,6 +64,7 @@ public class CowboyShooting : MonoBehaviour
     {
         GetComponent<CowboyMovement>().enabled = true;
         GetComponent<NavMeshAgent>().isStopped = false;
+        GetComponent<CowboyStamina>().staminaTimer = GetComponent<CowboyStamina>().stamina;
         bulletAmount = 6;
     }
 }

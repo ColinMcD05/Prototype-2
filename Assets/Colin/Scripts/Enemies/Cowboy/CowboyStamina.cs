@@ -9,7 +9,7 @@ public class CowboyStamina : MonoBehaviour
 
     public float stamina = 25;
     public float regainStaminaTime = 5;
-    [HideInInspector] float staminaTimer;
+    public float staminaTimer;
 
     private void Update()
     {
