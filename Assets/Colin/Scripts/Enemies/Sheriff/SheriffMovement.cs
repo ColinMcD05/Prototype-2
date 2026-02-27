@@ -11,6 +11,10 @@ public class SheriffMovement : MonoBehaviour
     // Get Seperate GameObject/Scripts
     private GameObject player;
 
+    // animations -jose
+    [SerializeField] private Animator animator;
+
+
     // Mutable Variables
     [Header("Mutable Variables")]
     public Transform[] waypoints;
@@ -40,14 +44,17 @@ public class SheriffMovement : MonoBehaviour
         if (seePlayer)
         {
             Chase();
+            animator.SetBool("isRunning", true);
         }
         else if (sawPlayer)
         {
             LookAround();
+            animator.SetBool("isRunning", false);
         }
         else
         {
             Patrol();
+            animator.SetBool("isRunning", false);
         }
     }
 
