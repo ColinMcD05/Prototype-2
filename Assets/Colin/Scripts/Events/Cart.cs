@@ -10,7 +10,12 @@ public class Cart : MonoBehaviour
 
     private void OnEnable()
     {
-        Invoke("Disable", 3);
+        GetComponent<Collider>().enabled = true;
+    }
+
+    private void OnDisable()
+    {
+        GetComponent<Collider>().enabled = false;
     }
 
     void Update()
@@ -22,6 +27,10 @@ public class Cart : MonoBehaviour
     {
         transform.position = Vector3.Lerp(transform.position, new Vector3(stopPoint.position.x, transform.position.y, transform.position.z), cartSpeed * Time.deltaTime);
         Debug.Log("Moving");
+        if ((transform.position - new Vector3(stopPoint.position.x, transform.position.y, transform.position.z)).sqrMagnitude < 0.1f * 0.1f)
+        {
+            Disable();
+        }
     }
 
     private void Disable()

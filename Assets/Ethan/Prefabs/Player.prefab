@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 8727636365807007703}
   - component: {fileID: 8442095622377495532}
   - component: {fileID: 6908511378249775724}
+  - component: {fileID: 4480301880437407933}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -206,6 +207,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCollection
   macGuffinsNeeded: 1
+--- !u!114 &4480301880437407933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929851585142024573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2590cc81afa3c4fad40aa06d75c25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventHandler
 --- !u!1 &7328695927974222458
 GameObject:
   m_ObjectHideFlags: 0
