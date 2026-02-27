@@ -14,6 +14,19 @@ public class CowboyMovement : MonoBehaviour
     [Header("Mutable Variables")]
     public float enemySpeed = 5;
 
+
+    // Mutable Variables in script only
+
+    private void OnEnable()
+    {
+        agent.isStopped = false;
+    }
+
+    private void OnDisable()
+    {
+        agent.isStopped = true;
+    }
+
     void Start()
     {
         player = GameObject.Find("Player");

@@ -174,7 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11b5592c1d74864bba95682cda58a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sheriff
-  animator: {fileID: 295004876703436974}
   agent: {fileID: 2182415358997408331}
   waypoints: []
   patrolSpeed: 4
