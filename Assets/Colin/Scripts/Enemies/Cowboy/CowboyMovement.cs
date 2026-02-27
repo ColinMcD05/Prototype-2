@@ -1,8 +1,12 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class CowboyMovement : MonoBehaviour
 {
+    //animator stuff - jose
+    [SerializeField] private Animator animator;
+
     // Get Cowboy components
     [Header("Cowboy Components")]
     [SerializeField] NavMeshAgent agent;
@@ -26,5 +30,9 @@ public class CowboyMovement : MonoBehaviour
     {
         // Setting destination of Cowboy to current position of the player
         agent.SetDestination(player.transform.position);
+        if (agent.speed > 0)
+            {
+            animator.SetBool("isRunning", true);
+        }
     }
 }
