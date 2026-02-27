@@ -9,12 +9,12 @@ public class BarrelSpawn : MonoBehaviour
 
     // Mutable variables
     [Header("Mutable Variables")]
-    public Vector3 barrelSpawnPoint;
+    [SerializeField] Transform barrelSpawnPoint;
 
 
     public void SpawnBarrel()
     {
-        GameObject barrel = Instantiate(barrelPrefab, barrelSpawnPoint, Quaternion.identity);
+        GameObject barrel = Instantiate(barrelPrefab, barrelSpawnPoint.position, Quaternion.identity);
         barrel.GetComponent<Barrel>().enabled = true;
     }
 }

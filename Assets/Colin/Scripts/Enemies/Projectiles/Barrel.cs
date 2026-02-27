@@ -14,6 +14,6 @@ public class Barrel : MonoBehaviour
     private void OnEnable()
     {
         Destroy(gameObject, destroyTime);
-        barrelRigidbody.AddForce(new Vector3(barrelForce, 0, 0), ForceMode.Impulse);
+        barrelRigidbody.AddForce(new Vector3(-barrelForce, 0, 0), ForceMode.Impulse);
     }
 }
