@@ -19,7 +19,7 @@ public class PlayerCollection : MonoBehaviour
         if (other.CompareTag("EndGameVolume") && (macGuffinHeld >= macGuffinsNeeded))
         {
             // Added code for now, delete/edit later
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
             Debug.Log("You win!");
         }else if (other.CompareTag("EndGameVolume")&& (macGuffinHeld != macGuffinsNeeded))
         {

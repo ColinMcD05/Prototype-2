@@ -9,7 +9,9 @@ public class CutScene : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
+            timeline.Play();
+            other.GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<Collider>().enabled = false;
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using static UnityEngine.GraphicsBuffer;
 
 public class CowboyShooting : MonoBehaviour
@@ -21,6 +22,16 @@ public class CowboyShooting : MonoBehaviour
     // Mutable variables referenced and changed in script only
     int bulletAmount = 12;
     float shootTimer;
+
+    private void OnEnable()
+    {
+        Vector3 direction = player.position - transform.position;
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, direction, out hit, direction.magnitude, LayerMask.GetMask("Player", "Defualt")))
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
 
     void Update()
     {
