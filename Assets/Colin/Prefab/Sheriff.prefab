@@ -169,13 +169,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7698789067880538077}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c11b5592c1d74864bba95682cda58a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sheriff
-  animator: {fileID: 295004876703436974}
   agent: {fileID: 2182415358997408331}
+  animator: {fileID: 295004876703436974}
   waypoints: []
   patrolSpeed: 4
   chaseSpeed: 6
@@ -231,7 +231,7 @@ Transform:
   m_GameObject: {fileID: 8719114896410965567}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0.21}
+  m_LocalPosition: {x: 0.06, y: 3.85, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

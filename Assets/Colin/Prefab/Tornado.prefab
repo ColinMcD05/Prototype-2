@@ -127,7 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TornadoToMap
   targetPosition: {fileID: 0}
-  duration: 90
 --- !u!114 &5179442115928523125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +140,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TornadoMovement
   moveSpeed: 3
-  waypoints: []
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2488375152835951276
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Colin/Scenes/MainMenu.unity
+    guid: 07702932501d03e4db186d42783b9153
+  - enabled: 1
     path: Assets/Triston/Scenes/CCMap.unity
     guid: c0e74ea818d256046b5ab57cd27fac42
   - enabled: 1

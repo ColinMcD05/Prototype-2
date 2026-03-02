@@ -19,7 +19,7 @@ public class CowboyShooting : MonoBehaviour
     public float shootSpreadTime;
 
     // Mutable variables referenced and changed in script only
-    int bulletAmount = 6;
+    int bulletAmount = 12;
     float shootTimer;
 
     void Update()
@@ -43,7 +43,7 @@ public class CowboyShooting : MonoBehaviour
         foreach (float angle in angles)
         {
             Shoot(angle);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(shootSpreadTime);
         }
     }
 
@@ -64,6 +64,7 @@ public class CowboyShooting : MonoBehaviour
     {
         GetComponent<CowboyMovement>().enabled = true;
         GetComponent<NavMeshAgent>().isStopped = false;
+        GetComponent<CowboyStamina>().staminaTimer = GetComponent<CowboyStamina>().stamina;
         bulletAmount = 6;
     }
 }

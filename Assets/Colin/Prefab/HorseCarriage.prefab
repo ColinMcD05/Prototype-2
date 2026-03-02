@@ -62,6 +62,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1210769543076867267}
     m_Modifications:
+    - target: {fileID: 555102052285558154, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      propertyPath: cartSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7169680568134154214, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
       propertyPath: m_Name
       value: horsecarriage
@@ -113,6 +117,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7169680568134154214, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3321567961690447687}
+    - targetCorrespondingSourceObject: {fileID: 7169680568134154214, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2034783276349358793}
+    - targetCorrespondingSourceObject: {fileID: 7169680568134154214, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8084471320666264578}
   m_SourcePrefab: {fileID: 100100000, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
 --- !u!1 &4710337919175468293 stripped
 GameObject:
@@ -135,6 +145,39 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &2034783276349358793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710337919175468293}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.4621186, y: 10.37141, z: 8.040813}
+  m_Center: {x: -0.1076577, y: 0.604352, z: 3.520411}
+--- !u!114 &8084471320666264578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710337919175468293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e862f9e7f293b44980e0dff3545f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHitPlayer
 --- !u!4 &5338361830646611903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7508629579198131548, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
