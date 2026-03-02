@@ -8662,6 +8662,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: walkSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: sprintSpeed
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 8833292504680055243, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -17674,7 +17682,7 @@ GameObject:
   - component: {fileID: 1644565717}
   - component: {fileID: 1644565716}
   - component: {fileID: 1644565720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,12 +1,32 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
+    //movement variables
+    private float moveSpeed;
+    public float walkSpeed;
+    public float sprintSpeed;
     public Transform orientation;
     public InputActionReference move;
+    public InputActionReference sprint;
 
+    bool playerPressingSprint = false;
+
+    //Ground checking variables
+    private float playerHeight = 2;
+    public LayerMask isGroundCheck;
+    bool grounded;
+
+
+    //stamina variables
+    public Slider staminaSlider;
+    private float currentStam;
+    public float maxStam;
+
+
+    //input variables
     private float horizontalInput;
     private float verticalInput;
     private Vector2 moveInputGetVector;
@@ -20,11 +40,19 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        currentStam = maxStam;  
+        if (staminaSlider != null)
+        {
+            staminaSlider.maxValue = maxStam;
+            staminaSlider.value = currentStam;
+        }
     }
 
     private void Update()
     {
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, isGroundCheck); 
         Input();
+        sprinting();
         rb.linearDamping = damping;
     }
 
@@ -41,6 +69,33 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = moveInputGetVector.y;
     }
 
+    private void sprinting()
+    {
+        //if sprinting and grounded and have stam, change stamina and ui, set new speed. 
+        if (sprint.action.IsPressed() && grounded)
+        {
+            if (currentStam > 0)
+            {
+                currentStam--;
+            }
+            Debug.Log(currentStam);
+            staminaSlider.value = currentStam;
+            moveSpeed = sprintSpeed;
+        } else if (grounded && !sprint.action.IsPressed())
+        {
+            if (currentStam < maxStam)
+            {
+                currentStam++;
+            }
+            Debug.Log(currentStam);
+            staminaSlider.value = currentStam;
+            moveSpeed = walkSpeed;
+        }
+        //else
+        //{
+           //use if needed a different speed for falling
+        //}
+    }
     private void MovePlayer()
     {
         //movement direction, gets the direction the player should be moving when going forward. 
@@ -48,4 +103,6 @@ public class PlayerMovement : MonoBehaviour
         //moves player
         rb.AddForce(movementDirection.normalized * moveSpeed, ForceMode.Force);
     }
+
+
 }
