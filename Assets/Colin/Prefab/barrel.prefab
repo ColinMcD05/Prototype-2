@@ -160,8 +160,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Barrel
   barrelRigidbody: {fileID: 2118124348154040926}
-  destroyTime: 5
-  barrelForce: 12
+  destroyTime: 3
+  barrelForce: 15
 --- !u!64 &9127977936426186855
 MeshCollider:
   m_ObjectHideFlags: 0
