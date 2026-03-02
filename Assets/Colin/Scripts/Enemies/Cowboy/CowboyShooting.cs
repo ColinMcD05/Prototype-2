@@ -61,6 +61,7 @@ public class CowboyShooting : MonoBehaviour
     void Shoot(float angle)
     {
         angle += transform.eulerAngles.y - 90;
+        angle = UnityEngine.Random.Range(angle - 5, angle + 5);
         GameObject bullet = Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, 0), Quaternion.Euler(0, angle, -90));
         bulletAmount--;
         if (bulletAmount <= 0)
