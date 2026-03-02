@@ -45,6 +45,7 @@ public class SheriffMovement : MonoBehaviour
         {
             Chase();
             animator.SetBool("isRunning", true);
+            animator.SetBool("isIdle", false);
         }
         else if (sawPlayer)
         {
@@ -55,6 +56,7 @@ public class SheriffMovement : MonoBehaviour
         {
             Patrol();
             animator.SetBool("isRunning", false);
+            animator.SetBool("isIdle", true);
         }
     }
 
