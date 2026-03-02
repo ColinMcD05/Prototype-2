@@ -12,10 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public Transform orientation;
     public InputActionReference move;
     public InputActionReference sprint;
+    //stops player from sliding on the ground like it's ice. Basically adds friction. 
     [SerializeField] private float damping;
 
-
-    bool playerPressingSprint = false;
 
     [Header("Ground Check Settings")]
     //Ground checking variables
@@ -39,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
     private float verticalInput;
     private Vector2 moveInputGetVector;
     private Vector3 movementDirection;
-    //stops player from sliding on the ground like it's ice. Basically adds friction. 
 
     Rigidbody rb;
 
