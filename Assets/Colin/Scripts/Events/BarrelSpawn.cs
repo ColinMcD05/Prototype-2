@@ -14,7 +14,7 @@ public class BarrelSpawn : MonoBehaviour
 
     public void SpawnBarrel()
     {
-        GameObject barrel = Instantiate(barrelPrefab, barrelSpawnPoint.position, Quaternion.identity);
+        GameObject barrel = Instantiate(barrelPrefab, barrelSpawnPoint.position, Quaternion.Euler(90, 0,0));
         barrel.GetComponent<Barrel>().enabled = true;
     }
 }
