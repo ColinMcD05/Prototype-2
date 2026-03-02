@@ -3,10 +3,23 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
+    //movement variables
+    private float moveSpeed;
+    public float walkSpeed;
+    public float sprintSpeed;
     public Transform orientation;
     public InputActionReference move;
+    public InputActionReference sprint;
 
+    bool playerPressingSprint = false;
+
+    //Ground checking variables
+    private float playerHeight = 2;
+    public LayerMask isGroundCheck;
+    bool grounded;
+
+
+    //input variables
     private float horizontalInput;
     private float verticalInput;
     private Vector2 moveInputGetVector;
@@ -24,7 +37,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, isGroundCheck); 
         Input();
+        sprinting();
+        //sprinting();
         rb.linearDamping = damping;
     }
 
@@ -41,6 +57,20 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = moveInputGetVector.y;
     }
 
+    private void sprinting()
+    {
+        if (sprint.action.IsPressed() && grounded)
+        {
+            moveSpeed = sprintSpeed;
+        } else if (grounded && !sprint.action.IsPressed())
+        {
+            moveSpeed = walkSpeed;
+        }
+        //else
+        //{
+           //use if needed a different speed for falling
+        //}
+    }
     private void MovePlayer()
     {
         //movement direction, gets the direction the player should be moving when going forward. 
@@ -48,4 +78,6 @@ public class PlayerMovement : MonoBehaviour
         //moves player
         rb.AddForce(movementDirection.normalized * moveSpeed, ForceMode.Force);
     }
+
+
 }
