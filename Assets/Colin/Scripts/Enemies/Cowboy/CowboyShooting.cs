@@ -19,7 +19,7 @@ public class CowboyShooting : MonoBehaviour
     public float shootSpreadTime;
 
     // Mutable variables referenced and changed in script only
-    int bulletAmount = 6;
+    int bulletAmount = 12;
     float shootTimer;
 
     void Update()
