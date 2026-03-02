@@ -198,6 +198,8 @@ MonoBehaviour:
   isGroundCheck:
     serializedVersion: 2
     m_Bits: 256
+  staminaSlider: {fileID: 0}
+  maxStam: 10000
   damping: 5
 --- !u!114 &6908511378249775724
 MonoBehaviour:

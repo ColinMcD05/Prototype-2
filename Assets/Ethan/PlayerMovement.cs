@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
@@ -19,6 +20,12 @@ public class PlayerMovement : MonoBehaviour
     bool grounded;
 
 
+    //stamina variables
+    public Slider staminaSlider;
+    private float currentStam;
+    public float maxStam;
+
+
     //input variables
     private float horizontalInput;
     private float verticalInput;
@@ -33,6 +40,12 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        currentStam = maxStam;  
+        if (staminaSlider != null)
+        {
+            staminaSlider.maxValue = maxStam;
+            staminaSlider.value = currentStam;
+        }
     }
 
     private void Update()
@@ -40,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, isGroundCheck); 
         Input();
         sprinting();
-        //sprinting();
         rb.linearDamping = damping;
     }
 
@@ -59,11 +71,24 @@ public class PlayerMovement : MonoBehaviour
 
     private void sprinting()
     {
+        //if sprinting and grounded and have stam, change stamina and ui, set new speed. 
         if (sprint.action.IsPressed() && grounded)
         {
+            if (currentStam > 0)
+            {
+                currentStam--;
+            }
+            Debug.Log(currentStam);
+            staminaSlider.value = currentStam;
             moveSpeed = sprintSpeed;
         } else if (grounded && !sprint.action.IsPressed())
         {
+            if (currentStam < maxStam)
+            {
+                currentStam++;
+            }
+            Debug.Log(currentStam);
+            staminaSlider.value = currentStam;
             moveSpeed = walkSpeed;
         }
         //else
