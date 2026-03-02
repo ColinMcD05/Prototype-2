@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 stamRecoveryTimer--;
             }
-            if(stamRecoveryTimer <= 0)
+            if(stamRecoveryTimer <= 0 && currentStam < maxStam)
             {
                 currentStam+=staminaRecoverySpeed;
             }
