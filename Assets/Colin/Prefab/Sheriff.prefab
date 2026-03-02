@@ -169,12 +169,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7698789067880538077}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c11b5592c1d74864bba95682cda58a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sheriff
   agent: {fileID: 2182415358997408331}
+  animator: {fileID: 295004876703436974}
   waypoints: []
   patrolSpeed: 4
   chaseSpeed: 6
