@@ -104,10 +104,10 @@ public class PlayerMovement : MonoBehaviour
             staminaSlider.value = currentStam;
             moveSpeed = walkSpeed;
         }
-        //else
-        //{
-        //use if needed a different speed for falling
-        //}
+        else
+        {
+            damping = 0;
+        }
     }
     private void MovePlayer()
     {
