@@ -32,6 +32,9 @@ public class PlayerMovement : MonoBehaviour
     private float maxStaminaTimer;
     public float staminaRecoverySpeed;
 
+    [Header("Slope check")]
+    public float maxSlopeAngle;
+    private RaycastHit slopeHit;
 
     //input variables
     private float horizontalInput;
@@ -45,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        currentStam = maxStam;  
+        currentStam = maxStam;
         if (staminaSlider != null)
         {
             staminaSlider.maxValue = maxStam;
@@ -56,10 +59,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, isGroundCheck); 
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, isGroundCheck);
         Input();
         sprinting();
-        rb.linearDamping = damping;
+        if (grounded)//if on the ground, apply linear damping, otherwise do not. (fixes falling)
+        {
+            Debug.Log("grounded");
+            rb.linearDamping = damping;
+        }
+        else
+        {
+            rb.linearDamping = 0.0f;
+        }
     }
 
     private void FixedUpdate()
@@ -90,32 +101,64 @@ public class PlayerMovement : MonoBehaviour
             {
                 moveSpeed = walkSpeed;
             }
-                staminaSlider.value = currentStam;
-        } else if (grounded && !sprint.action.IsPressed()) //activating walking
+            staminaSlider.value = currentStam;
+        }
+        else if (grounded && !sprint.action.IsPressed()) //activating walking
         {
-            if (currentStam < maxStam && stamRecoveryTimer!> 0)
+            if (currentStam < maxStam && stamRecoveryTimer! > 0)
             {
                 stamRecoveryTimer--;
             }
-            if(stamRecoveryTimer <= 0 && currentStam < maxStam)
+            if (stamRecoveryTimer <= 0 && currentStam < maxStam)
             {
-                currentStam+=staminaRecoverySpeed;
+                currentStam += staminaRecoverySpeed;
             }
             staminaSlider.value = currentStam;
             moveSpeed = walkSpeed;
         }
-        else
-        {
-            damping = 0;
-        }
+        //else
+        //{
+
+        //}
     }
     private void MovePlayer()
     {
         //movement direction, gets the direction the player should be moving when going forward. 
         movementDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+
+        //slope
+        if (OnSlope())
+        {
+            rb.AddForce(GetSlopeMoveDirection() * (moveSpeed - moveSpeed/4 ), ForceMode.Force);
+
+            if (rb.linearVelocity.y > 0)
+            {
+                rb.AddForce(Vector3.down * 20f, ForceMode.Force);
+            }
+        }
+        rb.useGravity = !OnSlope();
+
         //moves player
         rb.AddForce(movementDirection.normalized * moveSpeed, ForceMode.Force);
     }
 
+    //thank god for unity forums
+    //gets the angle of the slope the player is on
+
+    private bool OnSlope()
+    {
+        //gets the angle of the slope the player is on if the raycast hits
+        if (Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.3f))
+        {
+            float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
+            return angle < maxSlopeAngle && angle != 0;
+        }
+        return false;
+    }
+
+    private Vector3 GetSlopeMoveDirection()
+    {
+        return Vector3.ProjectOnPlane(movementDirection, slopeHit.normal).normalized;
+    }
 
 }

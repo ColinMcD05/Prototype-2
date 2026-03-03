@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2737, y: 1, z: 0.23072}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 277747970767981070}
@@ -190,18 +190,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3a13cef4a718e418a246c7c5810ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  walkSpeed: 0
-  sprintSpeed: 0
+  walkSpeed: 40
+  sprintSpeed: 60
   orientation: {fileID: 979843647735129216}
   move: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   sprint: {fileID: -7471211009204490832, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  damping: 5
   isGroundCheck:
     serializedVersion: 2
     m_Bits: 256
   staminaSlider: {fileID: 0}
   maxStam: 3000
   stamRecoveryTimer: 1000
-  damping: 5
+  staminaRecoverySpeed: 1.5
+  maxSlopeAngle: 60
 --- !u!114 &6908511378249775724
 MonoBehaviour:
   m_ObjectHideFlags: 0
