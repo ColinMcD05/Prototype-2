@@ -70,6 +70,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horsecarriage
       objectReference: {fileID: 0}
+    - target: {fileID: 7169680568134154214, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      propertyPath: m_TagString
+      value: Moving Wagon
+      objectReference: {fileID: 0}
     - target: {fileID: 7508629579198131548, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

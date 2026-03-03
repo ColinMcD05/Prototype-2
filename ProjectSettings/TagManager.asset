@@ -9,6 +9,10 @@ TagManager:
   - Enemy
   - Cart
   - BarrelSpawner
+  - Cowboy
+  - Sheriff
+  - Bullet
+  - Moving Wagon
   layers:
   - Default
   - TransparentFX
