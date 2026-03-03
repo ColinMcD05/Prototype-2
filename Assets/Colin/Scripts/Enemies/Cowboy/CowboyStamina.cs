@@ -19,6 +19,7 @@ public class CowboyStamina : MonoBehaviour
             if (staminaTimer <= 0)
             {
                 cowboyMovement.enabled = false;
+                GetComponent<NavMeshAgent>().isStopped = true;
                 Invoke("RegainStamina", regainStaminaTime);
             }
         }

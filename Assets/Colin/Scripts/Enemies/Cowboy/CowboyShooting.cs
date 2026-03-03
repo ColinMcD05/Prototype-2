@@ -22,14 +22,16 @@ public class CowboyShooting : MonoBehaviour
     // Mutable variables referenced and changed in script only
     int bulletAmount = 12;
     float shootTimer;
-
     private void OnEnable()
     {
         Vector3 direction = player.position - transform.position;
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, direction, out hit, direction.magnitude, LayerMask.GetMask("Player", "Defualt")))
+        if (Physics.Raycast(transform.position, direction, out hit, direction.magnitude, LayerMask.GetMask("Player", "Default")))
         {
-            SceneManager.LoadScene(2);
+            if (hit.collider.gameObject.CompareTag("Player"))
+            {
+                SceneManager.LoadScene(2);
+            }
         }
     }
 

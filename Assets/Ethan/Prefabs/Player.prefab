@@ -126,6 +126,8 @@ GameObject:
   - component: {fileID: 8442095622377495532}
   - component: {fileID: 6908511378249775724}
   - component: {fileID: 4480301880437407933}
+  - component: {fileID: 2712162548589449617}
+  - component: {fileID: 7401206461583337768}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -195,13 +197,14 @@ MonoBehaviour:
   orientation: {fileID: 979843647735129216}
   move: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   sprint: {fileID: -7471211009204490832, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  damping: 5
   isGroundCheck:
     serializedVersion: 2
     m_Bits: 256
   staminaSlider: {fileID: 0}
   maxStam: 3000
   stamRecoveryTimer: 1000
-  damping: 5
+  staminaRecoverySpeed: 0
 --- !u!114 &6908511378249775724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +230,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2590cc81afa3c4fad40aa06d75c25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventHandler
+--- !u!95 &2712162548589449617
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929851585142024573}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7401206461583337768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929851585142024573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals: []
+    m_Events: []
 --- !u!1 &7328695927974222458
 GameObject:
   m_ObjectHideFlags: 0

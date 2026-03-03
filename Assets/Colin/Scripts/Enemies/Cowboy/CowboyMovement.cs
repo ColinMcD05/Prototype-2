@@ -22,11 +22,6 @@ public class CowboyMovement : MonoBehaviour
         agent.isStopped = false;
     }
 
-    private void OnDisable()
-    {
-        agent.isStopped = true;
-    }
-
     void Start()
     {
         player = GameObject.Find("Player");
