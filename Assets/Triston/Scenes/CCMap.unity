@@ -2957,75 +2957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
---- !u!1 &310996386
-GameObject:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2109043962}
-    m_Modifications:
-    - target: {fileID: 2811679165683276101, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_Name
-      value: Tumbleweed (Static Prop)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 108.427505
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 108.427505
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 108.427505
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -27.1377
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.14872
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 21.641838
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9536423
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.3009425
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 35.028
-      objectReference: {fileID: 0}
-    - target: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0706b8f8013239c418b784a509346b99, type: 3}
 --- !u!1001 &303364741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9466,23 +9397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: walkSpeed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: walkSpeed
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: sprintSpeed
       value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: staminaSlider
-      value: 
-      objectReference: {fileID: 1128310561}
-    - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: staminaRecoverySpeed
-      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: maxSlopeAngle
@@ -12470,17 +12389,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
   m_PrefabInstance: {fileID: 1108901890}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1128310561 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4896325063991013274, guid: 0d3d8cfb28c95c741b4915897692a360, type: 3}
-  m_PrefabInstance: {fileID: 1741208541}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!4 &1139636965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 137881877965189750, guid: e3ad6b9f39680d24789b116e45e5719f, type: 3}
@@ -21461,11 +21369,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4889326857382672600, guid: 001a5ac0553be334f903a1258944b34b, type: 3}
   m_PrefabInstance: {fileID: 1821423523}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1823730875 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3192708957153739775, guid: 0706b8f8013239c418b784a509346b99, type: 3}
-  m_PrefabInstance: {fileID: 288759920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1830568110
 GameObject:
   m_ObjectHideFlags: 0
@@ -23296,7 +23199,6 @@ Transform:
   - {fileID: 8127147}
   - {fileID: 1317310058}
   - {fileID: 1096628268}
-  - {fileID: 1823730875}
   - {fileID: 1551902036}
   - {fileID: 1074202569}
   - {fileID: 326916256}
@@ -24140,9 +24042,8 @@ SceneRoots:
   - {fileID: 1183210591}
   - {fileID: 854303227}
   - {fileID: 2076486843}
-  - {fileID: 7362420329957356754}
-  - {fileID: 246801372}
-  - {fileID: 913818066}
-  - {fileID: 1921780448}
-  - {fileID: 795843672}
   - {fileID: 292949674}
+  - {fileID: 43223284}
+  - {fileID: 1868616704}
+  - {fileID: 136665314}
+  - {fileID: 1734661680}
