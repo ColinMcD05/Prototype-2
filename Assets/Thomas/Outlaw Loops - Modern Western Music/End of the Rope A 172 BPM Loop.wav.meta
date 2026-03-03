@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 19a9b959eb58e4964ae6b390b05beb7c
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 8
+  defaultSettings:
+    serializedVersion: 2
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+    preloadAudioData: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 309577
+  packageName: Outlaw Loops - Modern Western Music
+  packageVersion: 1.0
+  assetPath: Assets/Outlaw Loops - Modern Western Music/End of the Rope A 172 BPM
+    Loop.wav
+  uploadId: 730717
