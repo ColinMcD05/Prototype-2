@@ -11,6 +11,9 @@ public class CowboyShooting : MonoBehaviour
     [Header("References")]
     [SerializeField] Transform player;
     [SerializeField] GameObject bulletPrefab;
+    [SerializeField] GameManager gameManager;
+    [SerializeField] AudioSource gunAudio;
+    [SerializeField] AudioClip[] shooting;
 
     // Mutable variables
     [Header("Mutable variables")]
@@ -22,15 +25,23 @@ public class CowboyShooting : MonoBehaviour
     // Mutable variables referenced and changed in script only
     int bulletAmount = 12;
     float shootTimer;
+
+    private void Awake()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
+
     private void OnEnable()
     {
         Vector3 direction = player.position - transform.position;
         RaycastHit hit;
+        gunAudio.PlayOneShot(shooting[0]);
         if (Physics.Raycast(transform.position, direction, out hit, direction.magnitude, LayerMask.GetMask("Player", "Default")))
         {
             if (hit.collider.gameObject.CompareTag("Player"))
             {
                 SceneManager.LoadScene(2);
+                gameManager.whatKilled = "Bullet";
             }
         }
     }
@@ -39,6 +50,7 @@ public class CowboyShooting : MonoBehaviour
     {
         if (Vector3.Distance(player.position, transform.position) < shootingRange && bulletAmount > 0 && shootTimer <= 0)
         {
+            gunAudio.PlayOneShot(shooting[1]);
             StartCoroutine(ShootVolley());
         }
         else

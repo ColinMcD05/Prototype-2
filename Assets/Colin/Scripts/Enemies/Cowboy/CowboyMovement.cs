@@ -6,6 +6,7 @@ public class CowboyMovement : MonoBehaviour
     // Get Cowboy components
     [Header("Cowboy Components")]
     [SerializeField] NavMeshAgent agent;
+    [SerializeField] AudioSource cowboyAudio;
 
     // Get other GameObject components
     private GameObject player;
