@@ -62,14 +62,15 @@ public class PlayerMovement : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, isGroundCheck);
         Input();
         sprinting();
+        SpeedLimiter();
+        Debug.Log(rb.linearVelocity.magnitude);
         if (grounded)//if on the ground, apply linear damping, otherwise do not. (fixes falling)
         {
-            Debug.Log("grounded");
             rb.linearDamping = damping;
         }
         else
         {
-            rb.linearDamping = 0.0f;
+            rb.linearDamping = 1;
         }
     }
 
@@ -129,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
         //slope
         if (OnSlope())
         {
-            rb.AddForce(GetSlopeMoveDirection() * (moveSpeed ), ForceMode.Force);
+            rb.AddForce(GetSlopeMoveDirection() * moveSpeed * 10f, ForceMode.Force);
 
             if (rb.linearVelocity.y > 0)
             {
@@ -139,7 +140,32 @@ public class PlayerMovement : MonoBehaviour
         rb.useGravity = !OnSlope();
 
         //moves player
-        rb.AddForce(movementDirection.normalized * moveSpeed, ForceMode.Force);
+        rb.AddForce(movementDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+    }
+
+    private void SpeedLimiter()
+    {
+        if (OnSlope())
+        {
+            if(rb.linearVelocity.magnitude > moveSpeed)
+            {
+                rb.linearVelocity = rb.linearVelocity.normalized * moveSpeed;
+            }
+        }
+        else
+        {
+            Vector3 regularVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+
+            //limit speed
+            if (regularVelocity.magnitude > moveSpeed)
+            {
+                Vector3 limitedVelocity = regularVelocity.normalized * moveSpeed;
+                rb.linearVelocity = new Vector3(limitedVelocity.x, rb.linearVelocity.y, limitedVelocity.z);
+            }
+        }
+
+           
+
     }
 
     //thank god for unity forums
