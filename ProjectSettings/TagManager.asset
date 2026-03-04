@@ -13,6 +13,9 @@ TagManager:
   - Sheriff
   - Bullet
   - Moving Wagon
+  - Barrel
+  - Tornado
+  - Cactus
   layers:
   - Default
   - TransparentFX
