@@ -7,18 +7,20 @@ public class handrun : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private Animator animator;
+    [SerializeField] private Rigidbody playerrigid;
+    
     void Start()
     {
-
+        animator.SetBool("isMoving", false);
     }
     void Update()
     {
         {
-            if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
+            if (playerrigid.linearVelocity.magnitude > 0.0000001f)
             {
                 animator.SetBool("isMoving", true);
             }
-            else
+            else 
             {
                 animator.SetBool("isMoving", false);
             }

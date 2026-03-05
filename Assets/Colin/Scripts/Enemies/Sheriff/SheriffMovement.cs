@@ -55,8 +55,7 @@ public class SheriffMovement : MonoBehaviour
         else
         {
             Patrol();
-            animator.SetBool("isRunning", false);
-            animator.SetBool("isIdle", true);
+            animator.SetBool("isRunning", true);
         }
     }
 
