@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] AudioSource audioSource, music;
     [SerializeField] AudioClip[] playAudio;
     [SerializeField] CanvasGroup canvas;
+    [SerializeField] EventSystem eventSystem;
+    [SerializeField] Button playButton;
 
     void Awake()
     {
@@ -18,6 +22,9 @@ public class MainMenu : MonoBehaviour
                 Destroy(GameObject.Find("GameManager"));
             }
         }
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        eventSystem.firstSelectedGameObject = playButton.gameObject;
     }
 
     public void PlayGame()

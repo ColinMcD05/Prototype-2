@@ -1282,6 +1282,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fa260258a995c0241b280eca8d03a70a, type: 3}
   - {fileID: 8300000, guid: 4603a577d851e43478e3a3a43d054a0e, type: 3}
   canvas: {fileID: 16844361}
+  eventSystem: {fileID: 827400803}
+  playButton: {fileID: 1643460076}
 --- !u!4 &1923300613
 Transform:
   m_ObjectHideFlags: 0

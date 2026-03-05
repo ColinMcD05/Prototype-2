@@ -192,12 +192,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3a13cef4a718e418a246c7c5810ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  walkSpeed: 40
-  sprintSpeed: 60
+  walkSpeed: 4
+  sprintSpeed: 6
   orientation: {fileID: 979843647735129216}
   move: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   sprint: {fileID: -7471211009204490832, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  damping: 5
+  damping: 4
   isGroundCheck:
     serializedVersion: 2
     m_Bits: 256
@@ -404,6 +404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   animator: {fileID: 8264741555789345871}
+  playerrigid: {fileID: 0}
 --- !u!95 &8264741555789345871
 Animator:
   serializedVersion: 7

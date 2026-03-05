@@ -7,6 +7,8 @@ public class SheriffVision : MonoBehaviour
     [Header("Sheriff Components")]
     [SerializeField] NavMeshAgent agent;
     [SerializeField] SheriffMovement sheriffMovement;
+    [SerializeField] AudioSource sheriffAudioSource;
+    [SerializeField] AudioClip[] heyAudio;
 
     // Get Other Components
     Transform player;
@@ -38,6 +40,11 @@ public class SheriffVision : MonoBehaviour
             if (!sheriffMovement.enabled)
             {
                 sheriffMovement.enabled = true;
+            }
+            if (!sheriffMovement.seePlayer)
+            {
+                int playedClip = UnityEngine.Random.Range(0, heyAudio.Length);
+                sheriffAudioSource.PlayOneShot(heyAudio[playedClip]);
             }
             sheriffMovement.seePlayer = true;
             sheriffMovement.sawPlayer = true;

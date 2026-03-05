@@ -2,6 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class GameOver : MonoBehaviour
     [SerializeField] AudioSource audioSource, music;
     [SerializeField] AudioClip[] sheriff, cowboy, bullet, movingWagon, barrel, tornado, cactus, bulletAudio;
     [SerializeField] CanvasGroup canvas;
+    [SerializeField] EventSystem eventSystem;
+    [SerializeField] Button retryButton;
     GameManager gameManager;
 
     private void Awake()
@@ -16,6 +20,9 @@ public class GameOver : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         killedInfo.text = gameManager.whatKilled;
         PlaySound();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        eventSystem.firstSelectedGameObject = retryButton.gameObject;
     }
 
     void PlaySound()
