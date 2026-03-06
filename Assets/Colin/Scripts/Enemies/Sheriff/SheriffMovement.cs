@@ -7,6 +7,8 @@ public class SheriffMovement : MonoBehaviour
     // Get Sheriffs Components
     [Header("Sheriffs Components")]
     [SerializeField] NavMeshAgent agent;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] talking;
 
     // Get Seperate GameObject/Scripts
     private GameObject player;

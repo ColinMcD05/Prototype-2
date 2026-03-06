@@ -176,6 +176,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sheriff
   agent: {fileID: 2182415358997408331}
+  audioSource: {fileID: 4000945324312050444}
+  talking:
+  - {fileID: 8300000, guid: 9dd599e5bc1574f43b46bfdf5d5ac3db, type: 3}
+  - {fileID: 8300000, guid: a8edc966544d43f49982d2972b097156, type: 3}
   animator: {fileID: 295004876703436974}
   waypoints: []
   patrolSpeed: 4
@@ -263,7 +267,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
