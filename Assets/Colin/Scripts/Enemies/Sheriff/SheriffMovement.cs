@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using static UnityEngine.GraphicsBuffer;
@@ -30,6 +31,7 @@ public class SheriffMovement : MonoBehaviour
     int currentWaypointIndex;
     int lookDirection = 1;
     Quaternion lookRotation;
+    bool speaking;
 
     // Immutable variables
     float reachDistance = 0.1f;
@@ -48,6 +50,11 @@ public class SheriffMovement : MonoBehaviour
             Chase();
             animator.SetBool("isRunning", true);
             animator.SetBool("isIdle", false);
+            if (!speaking)
+            {
+                speaking = true;
+                StartCoroutine(Speak());
+            }
         }
         else if (sawPlayer)
         {
@@ -143,5 +150,17 @@ public class SheriffMovement : MonoBehaviour
         {
             lookRotation = transform.rotation * Quaternion.Euler(0, 45, 0);
         }
+    }
+
+    IEnumerator Speak()
+    {
+        while (seePlayer)
+        {
+            int chosenAudio = UnityEngine.Random.Range(0, talking.Length);
+            float speakTimer = UnityEngine.Random.Range(8f, 15f);
+            audioSource.PlayOneShot(talking[chosenAudio]);
+            yield return new WaitForSeconds(speakTimer);
+        }
+        speaking = false;
     }
 }
