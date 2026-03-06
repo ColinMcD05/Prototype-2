@@ -6,7 +6,7 @@ public class CowboyMovement : MonoBehaviour
     // Get Cowboy components
     [Header("Cowboy Components")]
     [SerializeField] NavMeshAgent agent;
-    [SerializeField] AudioSource cowboyAudio;
+    [SerializeField] AudioSource cowboyAudio, cowboySteps;
 
     // Get other GameObject components
     private GameObject player;
@@ -21,6 +21,12 @@ public class CowboyMovement : MonoBehaviour
     private void OnEnable()
     {
         agent.isStopped = false;
+        cowboySteps.enabled = true;
+    }
+
+    private void OnDisable()
+    {
+        cowboySteps.enabled = false;
     }
 
     void Start()
