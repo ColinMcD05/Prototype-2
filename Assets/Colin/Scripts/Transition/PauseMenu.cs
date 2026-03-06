@@ -33,4 +33,15 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
+    public void Resume()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void Quitting()
+    {
+        Application.Quit();
+    }
 }
