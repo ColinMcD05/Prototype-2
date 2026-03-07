@@ -40,7 +40,7 @@ public class MainMenu : MonoBehaviour
         int num = UnityEngine.Random.Range(0, playAudio.Length);
         audioSource.PlayOneShot(playAudio[num], 0.6f);
         StartCoroutine(FadeOut());
-        Invoke("Play", 2.5f);
+        Invoke("Play", 2f);
     }
 
     public void QuitGame()
@@ -50,7 +50,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
     }
 
     IEnumerator FadeOut()
