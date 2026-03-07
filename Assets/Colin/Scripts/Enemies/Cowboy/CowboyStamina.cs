@@ -5,6 +5,8 @@ public class CowboyStamina : MonoBehaviour
 {
 
     [SerializeField] CowboyMovement cowboyMovement;
+    [SerializeField] AudioSource cowboyAudio;
+    [SerializeField] AudioClip[] cowboyTired;
     [SerializeField] NavMeshAgent agent;
 
     public float stamina = 25;
@@ -18,6 +20,8 @@ public class CowboyStamina : MonoBehaviour
             staminaTimer -= Time.deltaTime;
             if (staminaTimer <= 0)
             {
+                int playedClip = UnityEngine.Random.Range(0, cowboyTired.Length);
+                cowboyAudio.PlayOneShot(cowboyTired[playedClip]);
                 cowboyMovement.enabled = false;
                 GetComponent<NavMeshAgent>().isStopped = true;
                 Invoke("RegainStamina", regainStaminaTime);
