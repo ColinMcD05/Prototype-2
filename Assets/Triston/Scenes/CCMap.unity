@@ -29025,13 +29025,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100893570303652830, guid: 35176fceb83a7014e9829eb72f8e75f2, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440537382324326906, guid: 35176fceb83a7014e9829eb72f8e75f2, type: 3}
+      propertyPath: neighInterval
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7677858486624577357, guid: 35176fceb83a7014e9829eb72f8e75f2, type: 3}
       propertyPath: m_Name
       value: Horse
       objectReference: {fileID: 0}
     - target: {fileID: 9002932144495463192, guid: 35176fceb83a7014e9829eb72f8e75f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -3.76
       objectReference: {fileID: 0}
     - target: {fileID: 9002932144495463192, guid: 35176fceb83a7014e9829eb72f8e75f2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29039,7 +29047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9002932144495463192, guid: 35176fceb83a7014e9829eb72f8e75f2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -74.67
+      value: -64.72
       objectReference: {fileID: 0}
     - target: {fileID: 9002932144495463192, guid: 35176fceb83a7014e9829eb72f8e75f2, type: 3}
       propertyPath: m_LocalRotation.w
