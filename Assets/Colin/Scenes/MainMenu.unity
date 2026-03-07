@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 16844359}
   - component: {fileID: 16844358}
   - component: {fileID: 16844357}
-  - component: {fileID: 16844361}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1375,8 +1374,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.078431375, g: 0.078431375, b: 0.078431375, a: 1}
     m_HighlightedColor: {r: 0.6754716, g: 0.17205401, b: 0.17205401, a: 1}
-    m_PressedColor: {r: 0.1141829, g: 0.7660377, b: 0.12362385, a: 1}
-    m_SelectedColor: {r: 0.078431375, g: 0.078431375, b: 0.078431375, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.68235296, g: 0.18039216, b: 0.18039216, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1482,7 +1481,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b773e790e2f8e694cba1a9d6944c6fff, type: 3}
   - {fileID: 8300000, guid: fa260258a995c0241b280eca8d03a70a, type: 3}
   - {fileID: 8300000, guid: 4603a577d851e43478e3a3a43d054a0e, type: 3}
-  canvas: {fileID: 16844361}
+  canvas: {fileID: 0}
   eventSystem: {fileID: 827400803}
   playButton: {fileID: 1643460076}
 --- !u!4 &1923300613

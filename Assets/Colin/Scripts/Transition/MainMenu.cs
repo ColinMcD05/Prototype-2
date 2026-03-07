@@ -13,6 +13,14 @@ public class MainMenu : MonoBehaviour
     [SerializeField] EventSystem eventSystem;
     [SerializeField] Button playButton;
 
+    private void Update()
+    {
+        if (eventSystem.currentSelectedGameObject == null)
+        {
+            eventSystem.SetSelectedGameObject(playButton.gameObject);
+        }
+    }
+
     void Awake()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0)
