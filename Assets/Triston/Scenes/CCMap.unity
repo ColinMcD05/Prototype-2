@@ -16257,14 +16257,6 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5179442115928523125, guid: fd873c8019c85cf4b8115911a200583b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5179442115928523125, guid: fd873c8019c85cf4b8115911a200583b, type: 3}
-      propertyPath: waypoints.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5179442115928523125, guid: fd873c8019c85cf4b8115911a200583b, type: 3}
       propertyPath: 'waypoints.Array.data[0]'
       value: 
       objectReference: {fileID: 925307843}
