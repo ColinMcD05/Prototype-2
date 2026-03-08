@@ -21,6 +21,7 @@ public class CutScene : MonoBehaviour
             other.GetComponentInParent<PlayerMovement>().enabled = false;
             other.transform.GetChild(1).transform.rotation = Quaternion.Euler(0, 180, 0);
             other.GetComponentInParent<AudioSource>().Stop();
+            other.GetComponentInParent<SkipCutScene>().enabled = true;
             GetComponent<Collider>().enabled = false;
         }
     }

@@ -39,6 +39,7 @@ public class SheriffVision : MonoBehaviour
         {
             if (!sheriffMovement.enabled)
             {
+                gameObject.GetComponent<EnemyHitPlayer>().enabled = true;
                 sheriffMovement.enabled = true;
                 sheriffAudioSource.loop = false;
             }
