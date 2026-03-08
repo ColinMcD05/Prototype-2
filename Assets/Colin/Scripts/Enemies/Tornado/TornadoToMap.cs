@@ -27,14 +27,7 @@ public class TornadoToMap : MonoBehaviour
 
         // Ensure the object finishes exactly at the target
         transform.position = target;
-    }
-
-    void Update()
-    {
-        if (transform.position == targetPosition.position)
-        {
-            GetComponent<TornadoMovement>().enabled = true;
-            enabled = false;
-        }
+        GetComponent<TornadoMovement>().enabled = true;
+        enabled = false;
     }
 }

@@ -63,14 +63,13 @@ public class PlayerMovement : MonoBehaviour
         Input();
         sprinting();
         SpeedLimiter();
-        Debug.Log(rb.linearVelocity.magnitude);
         if (grounded)//if on the ground, apply linear damping, otherwise do not. (fixes falling)
         {
             rb.linearDamping = damping;
         }
         else
         {
-            rb.linearDamping = 1;
+            rb.linearDamping = 0.5f;
         }
     }
 
@@ -134,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (rb.linearVelocity.y > 0)
             {
-                rb.AddForce(Vector3.down * 50f, ForceMode.Force);
+                rb.AddForce(Vector3.down * 40f, ForceMode.Force);
             }
         }
         rb.useGravity = !OnSlope();

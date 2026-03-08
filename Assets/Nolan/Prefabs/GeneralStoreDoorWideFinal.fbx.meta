@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: eeefe3a3d8094f948b3e6d14b778fe30
+guid: 8cf99bd091e7fa14a81a9a13c1ee5cfb
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Generalstoredoor2_m
+    second: {fileID: 2100000, guid: 553771af1e55d7c42b2d5cc078ebc9ce, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
