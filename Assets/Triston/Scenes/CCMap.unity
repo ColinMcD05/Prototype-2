@@ -11452,64 +11452,24 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Signals.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: 'm_Events.m_Signals.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: f2c22af3e26a7314a915614e7dc891c3, type: 2}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 881353371}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1722738290}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 881353371}
     - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: PlayOneShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerMovement, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: PlayerMovement, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
@@ -11518,14 +11478,10 @@ PrefabInstance:
     - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8300000, guid: ceeb83f81706984459b8f4f56dcf7bd2, type: 3}
-    - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7401206461583337768, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.AudioClip, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: maxSlopeAngle
@@ -20842,10 +20798,6 @@ PrefabInstance:
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 4cc87e05432c42f448cf8bc9e92205d4, type: 3}
-    - target: {fileID: 4000945324312050444, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
-      propertyPath: MinDistance
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 6932710921282904193, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.839
@@ -26718,6 +26670,8 @@ PlayableDirector:
     value: {fileID: 821892807}
   - key: {fileID: -5335594300283664698, guid: de47728853e58ee45959b2ce0f5d4fdd, type: 2}
     value: {fileID: 553372289}
+  - key: {fileID: 2558626049963616785, guid: de47728853e58ee45959b2ce0f5d4fdd, type: 2}
+    value: {fileID: 1722738290}
   m_ExposedReferences:
     m_References:
     - 44d2957e6ffea5e48ac53e55b2047072: {fileID: 0}
@@ -30573,6 +30527,26 @@ PrefabInstance:
     - target: {fileID: 3561828712065376078, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
       propertyPath: m_BaseOffset
       value: 1.122
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803743835398065918, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4657843
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803743835398065918, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: m_Size.z
+      value: 1.0231413
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803743835398065918, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: m_Center.x
+      value: -0.014595018
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803743835398065918, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: m_Center.y
+      value: 0.34274226
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803743835398065918, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: m_Center.z
+      value: 0.040014584
       objectReference: {fileID: 0}
     - target: {fileID: 9066301229350578332, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
       propertyPath: 'm_Events.m_Signals.Array.data[0]'
