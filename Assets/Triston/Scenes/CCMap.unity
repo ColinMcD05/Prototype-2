@@ -28777,6 +28777,10 @@ PrefabInstance:
       propertyPath: Priority
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 4424703369952970603, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: MaxDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 9066301229350578332, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
       propertyPath: 'm_Events.m_Signals.Array.data[0]'
       value: 
