@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 192833254018435726}
   - component: {fileID: 2768383579734521345}
   - component: {fileID: 5920669461443059341}
+  - component: {fileID: 1216566889130178067}
   m_Layer: 0
   m_Name: Tornado
   m_TagString: Untagged
@@ -130,7 +131,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 3
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -299,3 +300,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   animator: {fileID: 192833254018435726}
+--- !u!114 &1216566889130178067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608282362452287867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e862f9e7f293b44980e0dff3545f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHitPlayer
