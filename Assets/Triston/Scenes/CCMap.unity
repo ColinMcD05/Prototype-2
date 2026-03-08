@@ -1702,7 +1702,7 @@ Transform:
   m_GameObject: {fileID: 136665312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6090603, y: -5.1726, z: 49.87208}
+  m_LocalPosition: {x: -0.05, y: -5.1726, z: 50.074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11222,6 +11222,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 80ef9c2d14a58a04c9faedd6bb2952f2, type: 2}
+    - target: {fileID: 5914434480905887963, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914434480905887963, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 17a1c513d1961fd48b4a042cb5d5a67e, type: 3}
     - target: {fileID: 7328695927974222458, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -23715,13 +23723,13 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: e1b11930544363b44af8994286856577, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.45
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 224
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

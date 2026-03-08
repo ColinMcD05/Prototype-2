@@ -10,5 +10,7 @@ public class PauseFirstSelection : MonoBehaviour
     private void OnEnable()
     {
         gameObject.GetComponent<EventSystem>().firstSelectedGameObject = resume;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

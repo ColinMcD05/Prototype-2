@@ -17,7 +17,10 @@ public class CutScene : MonoBehaviour
             playerTimeline.Play();
             cowboyTimeline.Play();
             Camera.main.GetComponent<PlayerCam>().enabled = false;
+            Camera.main.gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
             other.GetComponentInParent<PlayerMovement>().enabled = false;
+            other.transform.GetChild(1).transform.rotation = Quaternion.Euler(0, 180, 0);
+            other.GetComponentInParent<AudioSource>().Stop();
             GetComponent<Collider>().enabled = false;
         }
     }

@@ -972,8 +972,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fa260258a995c0241b280eca8d03a70a, type: 3}
   - {fileID: 8300000, guid: 4603a577d851e43478e3a3a43d054a0e, type: 3}
   canvas: {fileID: 1640174669}
-  eventSystem: {fileID: 0}
-  retryButton: {fileID: 0}
+  eventSystem: {fileID: 1664844036}
+  retryButton: {fileID: 471966543}
 --- !u!1 &700327132
 GameObject:
   m_ObjectHideFlags: 0
