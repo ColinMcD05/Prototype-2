@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Cart : MonoBehaviour
 {
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] crash;
+
     // Mutable ariabels in inspector
     [Header("Mutable Variables")]
     public Transform stopPoint;
@@ -16,6 +19,7 @@ public class Cart : MonoBehaviour
     private void OnDisable()
     {
         GetComponent<Collider>().enabled = false;
+        int pickedAudio = Random.Range(0, crash.Length);
     }
 
     void Update()

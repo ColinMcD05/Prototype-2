@@ -66,6 +66,26 @@ PrefabInstance:
       propertyPath: cartSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 555102052285558154, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 5951536770188090916}
+    - target: {fileID: 555102052285558154, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      propertyPath: crash.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 555102052285558154, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      propertyPath: 'crash.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 190ebb202c6cc564fb7cd11a8da4a38e, type: 3}
+    - target: {fileID: 555102052285558154, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      propertyPath: 'crash.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e0223e1a2f7ad7c488bd90f036aef45b, type: 3}
+    - target: {fileID: 555102052285558154, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      propertyPath: 'crash.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f67c66edc400a2d4da5e63c45070ee4b, type: 3}
     - target: {fileID: 7169680568134154214, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
       propertyPath: m_Name
       value: horsecarriage
@@ -127,6 +147,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7169680568134154214, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8084471320666264578}
+    - targetCorrespondingSourceObject: {fileID: 7169680568134154214, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5951536770188090916}
   m_SourcePrefab: {fileID: 100100000, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}
 --- !u!1 &4710337919175468293 stripped
 GameObject:
@@ -182,6 +205,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e862f9e7f293b44980e0dff3545f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitPlayer
+--- !u!82 &5951536770188090916
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710337919175468293}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &5338361830646611903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7508629579198131548, guid: 82bb06b7472791e4784bad360f1bf78a, type: 3}

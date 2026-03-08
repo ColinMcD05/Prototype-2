@@ -19650,6 +19650,14 @@ PrefabInstance:
       propertyPath: peripheryVision
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 4000945324312050444, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 4cc87e05432c42f448cf8bc9e92205d4, type: 3}
+    - target: {fileID: 4000945324312050444, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
+      propertyPath: MinDistance
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6932710921282904193, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.839
@@ -26027,14 +26035,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2708272497706123113, guid: f736999f9a4b1634eb3fb66c82c0f9c4, type: 3}
-      propertyPath: cartSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708272497706123113, guid: f736999f9a4b1634eb3fb66c82c0f9c4, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708272497706123113, guid: f736999f9a4b1634eb3fb66c82c0f9c4, type: 3}
       propertyPath: stopPoint
       value: 
       objectReference: {fileID: 606978281}
@@ -26069,6 +26069,10 @@ PrefabInstance:
     - target: {fileID: 5338361830646611903, guid: f736999f9a4b1634eb3fb66c82c0f9c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951536770188090916, guid: f736999f9a4b1634eb3fb66c82c0f9c4, type: 3}
+      propertyPath: MinDistance
+      value: 5.2296963
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28772,14 +28776,6 @@ PrefabInstance:
     - target: {fileID: 3561828712065376078, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
       propertyPath: m_BaseOffset
       value: 1.122
-      objectReference: {fileID: 0}
-    - target: {fileID: 4424703369952970603, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
-      propertyPath: Priority
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4424703369952970603, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
-      propertyPath: MaxDistance
-      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 9066301229350578332, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
       propertyPath: 'm_Events.m_Signals.Array.data[0]'
