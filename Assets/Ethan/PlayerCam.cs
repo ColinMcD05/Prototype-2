@@ -24,8 +24,8 @@ public class PlayerCam : MonoBehaviour
     {
         //get mouse or right stick input, seperate to 2 floats for x and y. 
         mouseInputGetVector = mouse.action.ReadValue<Vector2>();
-        float mouseX = mouseInputGetVector.x * Time.deltaTime * xCamSensitivity;
-        float mouseY = mouseInputGetVector.y * Time.deltaTime * yCamSensitivity;
+        float mouseX = mouseInputGetVector.x  * xCamSensitivity;
+        float mouseY = mouseInputGetVector.y  * yCamSensitivity;
         //use inputs to turn
         xCamTurning += mouseX;
         yCamTurning -= mouseY;
