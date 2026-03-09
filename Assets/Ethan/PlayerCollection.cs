@@ -21,13 +21,15 @@ public class PlayerCollection : MonoBehaviour
             // Added code for now, delete/edit later
             SceneManager.LoadScene(3);
             Debug.Log("You win!");
-        }else if (other.CompareTag("EndGameVolume")&& (macGuffinHeld != macGuffinsNeeded))
+        }
+        else if (other.CompareTag("EndGameVolume") && (macGuffinHeld != macGuffinsNeeded))
         {
             Debug.Log("Not Enough macguffins");
         }
 
-    //use later to win the game.
+        //use later to win the game.
     }
+
     private void winGame()
     {
 
