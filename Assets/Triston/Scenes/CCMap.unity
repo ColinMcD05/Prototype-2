@@ -13533,8 +13533,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5136682364053918580, guid: def23460b539b4645841fc387ca523a9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5136682364053918580, guid: def23460b539b4645841fc387ca523a9, type: 3}
       propertyPath: m_ColorTemperature
       value: 4343
+      objectReference: {fileID: 0}
+    - target: {fileID: 5136682364053918580, guid: def23460b539b4645841fc387ca523a9, type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5136682364053918580, guid: def23460b539b4645841fc387ca523a9, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8461192685928786840, guid: def23460b539b4645841fc387ca523a9, type: 3}
       propertyPath: m_LocalScale.x
