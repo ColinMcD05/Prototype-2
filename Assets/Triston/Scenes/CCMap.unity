@@ -9840,6 +9840,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7985732619582175565, guid: de43c833e4656304ca6fefe0299ffd90, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985732619582175565, guid: de43c833e4656304ca6fefe0299ffd90, type: 3}
       propertyPath: SizeModule.curve.minScalar
       value: 30
       objectReference: {fileID: 0}
@@ -9849,7 +9853,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7985732619582175565, guid: de43c833e4656304ca6fefe0299ffd90, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 1.38
+      value: 1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291082731687137526, guid: de43c833e4656304ca6fefe0299ffd90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8652218008232523634, guid: de43c833e4656304ca6fefe0299ffd90, type: 3}
       propertyPath: m_LocalScale.x
