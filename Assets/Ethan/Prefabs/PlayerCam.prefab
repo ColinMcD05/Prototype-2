@@ -151,8 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a301705989e1b647baf5dc60016cfed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCam
-  xCamSensitivity: 200
-  yCamSensitivity: 200
+  xCamSensitivity: 0.3
+  yCamSensitivity: 0.3
   orientation: {fileID: 0}
   mouse: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!114 &3015968713879041599
