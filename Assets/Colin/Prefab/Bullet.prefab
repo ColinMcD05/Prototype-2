@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627cb3fb1ae79e64197238bc26d12eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  bulletSpeed: 3
+  bulletSpeed: 15
   target: {x: 0, y: 0, z: 0}
 --- !u!114 &1397648769009462164
 MonoBehaviour:
