@@ -20964,6 +20964,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6974570143427401665, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7698789067880538077, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
       propertyPath: m_Name
       value: Sheriff
@@ -31392,3 +31396,5 @@ SceneRoots:
   - {fileID: 1758133167}
   - {fileID: 252867919}
   - {fileID: 724054798}
+  - {fileID: 752523403}
+  - {fileID: 640475739}
