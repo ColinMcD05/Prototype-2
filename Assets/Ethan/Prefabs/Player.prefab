@@ -312,6 +312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb9be714f5b92a746a72def290f132ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkipCutScene
+  skipAction: {fileID: 876734248257839767, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  playerTimeline: {fileID: 0}
+  cowboyTimeline: {fileID: 0}
 --- !u!82 &5914434480905887963
 AudioSource:
   m_ObjectHideFlags: 0

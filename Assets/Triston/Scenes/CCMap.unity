@@ -11584,6 +11584,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 791093979087605807, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: cowboyTimeline
+      value: 
+      objectReference: {fileID: 43223283}
+    - target: {fileID: 791093979087605807, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: playerTimeline
+      value: 
+      objectReference: {fileID: 1868616703}
     - target: {fileID: 929851585142024573, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Name
       value: Player
@@ -31287,3 +31295,5 @@ SceneRoots:
   - {fileID: 1258263229}
   - {fileID: 1329662704}
   - {fileID: 1545680714}
+  - {fileID: 752523403}
+  - {fileID: 640475739}
