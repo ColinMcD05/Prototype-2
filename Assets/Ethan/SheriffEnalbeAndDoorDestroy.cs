@@ -7,7 +7,6 @@ public class SheriffEnalbeAndDoorDestroy : MonoBehaviour
     public MonoBehaviour sheriffVision;
     void OnTriggerEnter(Collider other)
     {
-        MonoBehaviour[] scripts = sheriffEyes.GetComponents<MonoBehaviour>();
         // Check if the object we hit has the "player" tag
         if (other.CompareTag("Player"))
         {
