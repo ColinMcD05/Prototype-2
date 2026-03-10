@@ -58,7 +58,7 @@ public class MainMenu : MonoBehaviour
         while (canvas.alpha > 0)
         {
             music.volume -= 0.001f;
-            canvas.alpha -= 0.002f;
+            canvas.alpha -= 0.0008f;
             yield return null;
         }
     }
