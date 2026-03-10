@@ -9635,7 +9635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 4.286}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.05, y: 8.48}
+  m_AnchoredPosition: {x: -3.74, y: 8.48}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422459229
@@ -9685,13 +9685,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -9723,7 +9723,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -0.093266726, z: 10.214726, w: 2.5194316}
+  m_margin: {x: 0, y: -0.093266726, z: 7.073671, w: 2.5194316}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -37366,12 +37366,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8774859572272453130, guid: f4fe8c76a7ef2be46a21003033f3aac8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 17.137682
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774859572272453130, guid: f4fe8c76a7ef2be46a21003033f3aac8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6.7785635
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774859572272453130, guid: f4fe8c76a7ef2be46a21003033f3aac8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.56
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774859572272453130, guid: f4fe8c76a7ef2be46a21003033f3aac8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 8774859572272453130, guid: f4fe8c76a7ef2be46a21003033f3aac8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.04
+      value: -0.44
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43541,7 +43553,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -0.093266726, z: 10.214726, w: 4.3253427}
+  m_margin: {x: 0, y: 0.058212757, z: 10.214726, w: 4.3253427}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
