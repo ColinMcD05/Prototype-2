@@ -14045,6 +14045,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerHands
       objectReference: {fileID: 0}
+    - target: {fileID: 3938788311605522858, guid: c91e1d7908207c54f90be8af2df9f67b, type: 3}
+      propertyPath: playerrigid
+      value: 
+      objectReference: {fileID: 1722738297}
+    - target: {fileID: 5380226764189824118, guid: c91e1d7908207c54f90be8af2df9f67b, type: 3}
+      propertyPath: playerrigid
+      value: 
+      objectReference: {fileID: 1722738297}
     - target: {fileID: 8063880045643091708, guid: c91e1d7908207c54f90be8af2df9f67b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -40449,6 +40457,11 @@ Animator:
 --- !u!82 &1722738290 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 5914434480905887963, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+  m_PrefabInstance: {fileID: 881353370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1722738297 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8727636365807007703, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
   m_PrefabInstance: {fileID: 881353370}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1726421242
