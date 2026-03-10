@@ -33198,6 +33198,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarrelSpawn
   barrelPrefab: {fileID: 775794276230892532, guid: 177700b01c3a3c045b2c45aca93fb59c, type: 3}
+  barrelAudioSource: {fileID: 0}
+  glassAudioSource: {fileID: 0}
+  barrelClips: []
+  glassClip: []
   barrelSpawnPoint: {fileID: 620745107}
 --- !u!65 &1431226998
 BoxCollider:
@@ -37532,7 +37536,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599500419}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
