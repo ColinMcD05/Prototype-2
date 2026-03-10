@@ -204,9 +204,11 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3307266369850379128, guid: a74b508d60f20524d916d5f6f558af6d, type: 3}
   gameManager: {fileID: 0}
   gunAudio: {fileID: 2450075774237772970}
+  cowboyAudio: {fileID: 4424703369952970603}
   shooting:
   - {fileID: 8300000, guid: f8b86090b8cc6804987e3a7fc948786f, type: 3}
   - {fileID: 8300000, guid: f027d607957310a43baaaa08731d9be5, type: 3}
+  speaking: {fileID: 0}
   shootingRange: 10
   shootBufferTime: 5
   reloadTimer: 5

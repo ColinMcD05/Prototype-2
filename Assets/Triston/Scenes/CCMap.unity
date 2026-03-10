@@ -49515,6 +49515,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 998208922}
+    - target: {fileID: 3476741437814783563, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: speaking
+      value: 
+      objectReference: {fileID: 8300000, guid: b42941f0db60db64e9648335e3f1f524, type: 3}
     - target: {fileID: 3561828712065376078, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
       propertyPath: m_BaseOffset
       value: 1.122
