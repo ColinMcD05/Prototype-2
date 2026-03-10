@@ -37,7 +37,7 @@ public class CowboyShooting : MonoBehaviour
         Vector3 direction = player.position - transform.position;
         RaycastHit hit;
         gunAudio.PlayOneShot(shooting[0]);
-        if (Physics.Raycast(transform.position, direction, out hit, direction.magnitude, LayerMask.GetMask("Player", "Default")))
+        if (Physics.Raycast(transform.position, direction, out hit, direction.magnitude, LayerMask.GetMask("Player", "Default", "Ground")))
         {
             if (hit.collider.gameObject.CompareTag("Player"))
             {

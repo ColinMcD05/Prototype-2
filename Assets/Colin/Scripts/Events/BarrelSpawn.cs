@@ -26,5 +26,6 @@ public class BarrelSpawn : MonoBehaviour
         barrelAudioSource.PlayOneShot(barrelClips[chosenClip]);
         GameObject barrel = Instantiate(barrelPrefab, barrelSpawnPoint.position, Quaternion.Euler(90, 0,0));
         barrel.GetComponent<Barrel>().enabled = true;
+        barrel.GetComponent<EnemyHitPlayer>().enabled = true;
     }
 }

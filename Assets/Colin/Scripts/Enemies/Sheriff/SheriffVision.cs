@@ -27,7 +27,7 @@ public class SheriffVision : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
 
-        visionMasks = LayerMask.GetMask("Player", "Default");
+        visionMasks = LayerMask.GetMask("Player", "Default", "Ground");
         playerMask = LayerMask.GetMask("Player");
     }
 
