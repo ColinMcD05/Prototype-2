@@ -21,7 +21,7 @@ public class EnemyHitPlayer : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (gameObject.GetComponent<Rigidbody>().linearVelocity.magnitude >= 0.4f)
+        if (gameObject.GetComponent<Rigidbody>().linearVelocity.magnitude >= 2f)
         {
             if (other.gameObject.CompareTag("Player"))
             {
