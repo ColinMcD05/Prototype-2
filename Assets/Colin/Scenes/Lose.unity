@@ -447,8 +447,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 02b7f5c328b040b41b44598f0e49f8c8, type: 3}
   barrel:
   - {fileID: 8300000, guid: 190ebb202c6cc564fb7cd11a8da4a38e, type: 3}
-  - {fileID: 8300000, guid: e0223e1a2f7ad7c488bd90f036aef45b, type: 3}
-  - {fileID: 8300000, guid: f67c66edc400a2d4da5e63c45070ee4b, type: 3}
+  - {fileID: 8300000, guid: 655f93cca03bfee4b98025ca331a1cf6, type: 3}
+  - {fileID: 8300000, guid: fdda710af218c1d4f9f3ae02dc3865b3, type: 3}
+  - {fileID: 8300000, guid: eecdb6f939b3ed24e8e48bdc946c1448, type: 3}
   tornado:
   - {fileID: 8300000, guid: f0345b2eb1aa52a4f85a63df2d07fcd1, type: 3}
   cactus:

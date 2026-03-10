@@ -40,9 +40,10 @@ public class SheriffVision : MonoBehaviour
             if (!sheriffMovement.enabled)
             {
                 sheriffMovement.enabled = true;
+                sheriffAudioSource.Stop();
                 sheriffAudioSource.loop = false;
             }
-            if (!sheriffMovement.seePlayer)
+            if (!sheriffMovement.sawPlayer)
             {
                 int playedClip = UnityEngine.Random.Range(0, heyAudio.Length);
                 sheriffAudioSource.PlayOneShot(heyAudio[playedClip]);

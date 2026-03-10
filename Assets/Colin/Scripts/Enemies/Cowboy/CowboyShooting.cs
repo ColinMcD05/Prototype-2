@@ -12,8 +12,9 @@ public class CowboyShooting : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] GameManager gameManager;
-    [SerializeField] AudioSource gunAudio;
+    [SerializeField] AudioSource gunAudio, cowboyAudio;
     [SerializeField] AudioClip[] shooting;
+    [SerializeField] AudioClip speaking;
 
     // Mutable variables
     [Header("Mutable variables")]
@@ -80,6 +81,7 @@ public class CowboyShooting : MonoBehaviour
         bulletAmount--;
         if (bulletAmount <= 0)
         {
+            cowboyAudio.PlayOneShot(speaking);
             GetComponent<CowboyMovement>().enabled = false;
             GetComponent<NavMeshAgent>().isStopped = true;
             Invoke("Reload", reloadTimer);
