@@ -185,7 +185,7 @@ MonoBehaviour:
   cowboySpeaking:
   - {fileID: 8300000, guid: 48cee3aab75fe6d47afdde7286f23e7e, type: 3}
   - {fileID: 8300000, guid: a2bab8ef7a5bf684eaccc9b0557a73e8, type: 3}
-  - {fileID: 8300000, guid: b42941f0db60db64e9648335e3f1f524, type: 3}
+  - {fileID: 8300000, guid: 94763ed367541d04083e1828ef32a3eb, type: 3}
   - {fileID: 8300000, guid: 94763ed367541d04083e1828ef32a3eb, type: 3}
   enemySpeed: 5
 --- !u!114 &3476741437814783563
