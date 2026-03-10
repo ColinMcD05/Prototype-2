@@ -52,8 +52,7 @@ public class CowboyMovement : MonoBehaviour
         while (enabled)
         {
             int chosenAudio = UnityEngine.Random.Range(0, cowboySpeaking.Length);
-            float speakTimer = UnityEngine.Random.Range(8f, 15f);
-            yield return new WaitForSeconds(speakTimer);
+            yield return new WaitForSeconds(15);
             cowboyAudio.PlayOneShot(cowboySpeaking[chosenAudio]);
         }
     }
