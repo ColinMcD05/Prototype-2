@@ -108,10 +108,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 83b87b147ca1407498b65158846c26b3, type: 3}
   - {fileID: 8300000, guid: fdda710af218c1d4f9f3ae02dc3865b3, type: 3}
   - {fileID: 8300000, guid: eecdb6f939b3ed24e8e48bdc946c1448, type: 3}
-  glassClip:
-  - {fileID: 8300000, guid: 09af499debb3fc949bd30854998a61c7, type: 3}
-  - {fileID: 8300000, guid: 02b7f5c328b040b41b44598f0e49f8c8, type: 3}
-  - {fileID: 8300000, guid: 1cf4cb2fc2a9c174bafaf32ae419cd20, type: 3}
+  glassClip: {fileID: 8300000, guid: 09af499debb3fc949bd30854998a61c7, type: 3}
   barrelSpawnPoint: {fileID: 1615587279133196749}
 --- !u!82 &6047706814542236409
 AudioSource:
@@ -134,7 +131,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.350213
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -264,7 +261,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -300,7 +297,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.69
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -361,7 +358,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 3
+  MinDistance: 2
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
