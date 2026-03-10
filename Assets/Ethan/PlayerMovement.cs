@@ -42,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInputGetVector;
     private Vector3 movementDirection;
 
+    //audio
+    public AudioSource playerAudio, playerSteps;
+
     Rigidbody rb;
 
     private void Start()
@@ -63,6 +66,15 @@ public class PlayerMovement : MonoBehaviour
         Input();
         sprinting();
         SpeedLimiter();
+        if (move.action.IsPressed())
+        {
+            playerSteps.enabled = true;
+        }
+        else
+        {
+            playerSteps.enabled = false;
+
+        }
         if (grounded)//if on the ground, apply linear damping, otherwise do not. (fixes falling)
         {
             rb.linearDamping = damping;
