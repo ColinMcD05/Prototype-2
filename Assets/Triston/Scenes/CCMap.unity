@@ -51802,6 +51802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SaloonDoor_Closed
       objectReference: {fileID: 0}
+    - target: {fileID: 6748630690678556015, guid: e50e4e3544712a2499d40c90bda4e92d, type: 3}
+      propertyPath: m_TagString
+      value: ExitDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

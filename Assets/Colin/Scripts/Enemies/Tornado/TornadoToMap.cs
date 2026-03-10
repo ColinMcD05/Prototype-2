@@ -4,7 +4,7 @@ using System.Collections;
 public class TornadoToMap : MonoBehaviour
 {
     public Transform targetPosition;
-    float duration = 90f;
+    float duration = 110f;
 
     void Start()
     {
