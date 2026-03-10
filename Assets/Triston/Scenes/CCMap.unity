@@ -20282,6 +20282,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 80ef9c2d14a58a04c9faedd6bb2952f2, type: 2}
+    - target: {fileID: 2786041112855409882, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5914434480905887963, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: Priority
       value: 0
@@ -20290,6 +20294,14 @@ PrefabInstance:
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 17a1c513d1961fd48b4a042cb5d5a67e, type: 3}
+    - target: {fileID: 6377534518895203417, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: Priority
+      value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824335797046405687, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7328695927974222458, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -41160,7 +41172,7 @@ GameObject:
   - component: {fileID: 1758133163}
   m_Layer: 0
   m_Name: SheriffDoorTrigger
-  m_TagString: Untagged
+  m_TagString: sheriffDoorTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
