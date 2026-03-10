@@ -11,7 +11,8 @@ public class BarrelSpawn : MonoBehaviour
     [Header("Sounds")]
     [SerializeField] AudioSource barrelAudioSource;
     [SerializeField] AudioSource glassAudioSource;
-    [SerializeField] AudioClip[] barrelClips, glassClip;
+    [SerializeField] AudioClip[] barrelClips;
+    [SerializeField] AudioClip glassClip;
 
     // Mutable variables
     [Header("Mutable Variables")]
@@ -20,8 +21,7 @@ public class BarrelSpawn : MonoBehaviour
 
     public void SpawnBarrel()
     {
-        int chosenGlassClip = Random.Range(0, glassClip.Length);
-        glassAudioSource.PlayOneShot(glassClip[chosenGlassClip]);
+        glassAudioSource.PlayOneShot(glassClip);
         int chosenClip = Random.Range(0, barrelClips.Length);
         barrelAudioSource.PlayOneShot(barrelClips[chosenClip]);
         GameObject barrel = Instantiate(barrelPrefab, barrelSpawnPoint.position, Quaternion.Euler(90, 0,0));
