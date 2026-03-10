@@ -42782,6 +42782,8 @@ PlayableDirector:
     value: {fileID: 553372289}
   - key: {fileID: 2558626049963616785, guid: de47728853e58ee45959b2ce0f5d4fdd, type: 2}
     value: {fileID: 1722738290}
+  - key: {fileID: -6249014483713278372, guid: de47728853e58ee45959b2ce0f5d4fdd, type: 2}
+    value: {fileID: 2099920624}
   m_ExposedReferences:
     m_References:
     - 44d2957e6ffea5e48ac53e55b2047072: {fileID: 0}
@@ -47666,6 +47668,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 233511698001244408, guid: 624fe49f3c78adf4ea0065c1040061d0, type: 3}
   m_PrefabInstance: {fileID: 113551728}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2099920624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2045347023166733297, guid: fd873c8019c85cf4b8115911a200583b, type: 3}
+  m_PrefabInstance: {fileID: 1183210591}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
 --- !u!1 &2100985820 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5518772024080179547, guid: b8d9feb32a26dae4187f64268d7c6110, type: 3}
