@@ -16,6 +16,7 @@ TagManager:
   - Barrel
   - Tornado
   - Cactus
+  - sheriffDoorTrigger
   layers:
   - Default
   - TransparentFX

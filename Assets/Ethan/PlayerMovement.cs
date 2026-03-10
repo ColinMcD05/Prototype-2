@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 movementDirection;
 
     //audio
-    public AudioSource playerAudio, playerSteps;
+    public AudioSource playerSteps, sheriffAwake, saddlePickup;
 
     Rigidbody rb;
 
@@ -176,6 +176,22 @@ public class PlayerMovement : MonoBehaviour
         }
 
            
+
+    }
+
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        
+        if (other.CompareTag("sheriffDoorTrigger"))
+        {
+            sheriffAwake.enabled = true;
+        }
+        if (other.CompareTag("MacGuffin"))
+        {
+            saddlePickup.enabled = true;
+        }
 
     }
 
