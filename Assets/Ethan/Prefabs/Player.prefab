@@ -209,6 +209,8 @@ MonoBehaviour:
   stamRecoveryTimer: 1000
   staminaRecoverySpeed: 1.5
   maxSlopeAngle: 60
+  playerAudio: {fileID: 0}
+  playerSteps: {fileID: 0}
 --- !u!114 &6908511378249775724
 MonoBehaviour:
   m_ObjectHideFlags: 0
