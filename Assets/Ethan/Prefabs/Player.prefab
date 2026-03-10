@@ -242,6 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2590cc81afa3c4fad40aa06d75c25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventHandler
+  audioSource: {fileID: 5914434480905887963}
+  audioClip: {fileID: 8300000, guid: d4901382205533344882f92182e147b7, type: 3}
 --- !u!114 &7401206461583337768
 MonoBehaviour:
   m_ObjectHideFlags: 0

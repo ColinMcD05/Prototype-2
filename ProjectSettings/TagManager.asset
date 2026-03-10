@@ -17,6 +17,7 @@ TagManager:
   - Tornado
   - Cactus
   - sheriffDoorTrigger
+  - ExitDoor
   layers:
   - Default
   - TransparentFX

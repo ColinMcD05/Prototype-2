@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class EventHandler : MonoBehaviour
 {
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip audioClip;
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Cart"))
@@ -17,6 +20,15 @@ public class EventHandler : MonoBehaviour
         else
         {
             return;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("ExitDoor"))
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(audioClip);
         }
     }
 }
