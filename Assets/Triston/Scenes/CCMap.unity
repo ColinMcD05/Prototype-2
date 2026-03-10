@@ -10282,6 +10282,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 360384931677873478, guid: dac003c9707a58b449f6d1b7be0243aa, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360384931677873478, guid: dac003c9707a58b449f6d1b7be0243aa, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 360384931677873478, guid: dac003c9707a58b449f6d1b7be0243aa, type: 3}
+      propertyPath: InitialModule.startSizeY.scalar
+      value: 0.52
+      objectReference: {fileID: 0}
     - target: {fileID: 5826726593550042494, guid: dac003c9707a58b449f6d1b7be0243aa, type: 3}
       propertyPath: m_LocalScale.x
       value: 122.605194
@@ -10296,11 +10308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5826726593550042494, guid: dac003c9707a58b449f6d1b7be0243aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 114.2
+      value: 68.3
       objectReference: {fileID: 0}
     - target: {fileID: 5826726593550042494, guid: dac003c9707a58b449f6d1b7be0243aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000009536743
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 5826726593550042494, guid: dac003c9707a58b449f6d1b7be0243aa, type: 3}
       propertyPath: m_LocalPosition.z
