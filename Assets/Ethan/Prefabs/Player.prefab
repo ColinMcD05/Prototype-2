@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 6824335797046405687}
   - component: {fileID: 2786041112855409882}
   - component: {fileID: 4330953677923791123}
-  - component: {fileID: 6377534518895203417}
+  - component: {fileID: 2160422836909272930}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -726,9 +726,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Yeehaw
   yeehaw: {fileID: -3498760636873759246, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  playerSpeaking: {fileID: 6377534518895203417}
+  playerSpeaking: {fileID: 0}
   yeehawClip: {fileID: 8300000, guid: d35192d37428c904f8e95a887ffecd7a, type: 3}
---- !u!82 &6377534518895203417
+--- !u!82 &2160422836909272930
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -739,8 +739,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: cc45bf449fa91c6489bea62bdd7e3f6d, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -815,7 +815,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.001
       inSlope: 0
       outSlope: 0
       tangentMode: 0
