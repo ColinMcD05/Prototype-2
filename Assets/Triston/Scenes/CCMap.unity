@@ -3464,7 +3464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.43589
+      value: 4.445
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3502,7 +3502,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rollable Barrel Variant (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8828296306736714322, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7325,7 +7326,7 @@ Transform:
   m_GameObject: {fileID: 320783532}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.13, y: 5, z: -13.62}
+  m_LocalPosition: {x: -14.58, y: 5, z: -12.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12942,7 +12943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.43589
+      value: 4.46
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12980,7 +12981,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rollable Barrel Variant (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8828296306736714322, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -22098,6 +22100,10 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
+      propertyPath: walkSpeed
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: maxSlopeAngle
       value: 60
       objectReference: {fileID: 0}
@@ -22107,7 +22113,7 @@ PrefabInstance:
       objectReference: {fileID: 560083054}
     - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: stamRecoveryTimer
-      value: 350
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8442095622377495532, guid: da5739740bd731d478a41336f4ce10b1, type: 3}
       propertyPath: staminaRecoverySpeed
@@ -30422,8 +30428,12 @@ PrefabInstance:
       value: 17.814013
       objectReference: {fileID: 0}
     - target: {fileID: 8606427729124055213, guid: c9ea374286d7e9f488011ba111baf5f2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.9365902
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606427729124055213, guid: c9ea374286d7e9f488011ba111baf5f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.55
+      value: 16.912
       objectReference: {fileID: 0}
     - target: {fileID: 8606427729124055213, guid: c9ea374286d7e9f488011ba111baf5f2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30431,7 +30441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8606427729124055213, guid: c9ea374286d7e9f488011ba111baf5f2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -77.99
+      value: -73.65
       objectReference: {fileID: 0}
     - target: {fileID: 8606427729124055213, guid: c9ea374286d7e9f488011ba111baf5f2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -32195,7 +32205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.4358907
+      value: 4.444
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32233,7 +32243,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rollable Barrel Variant (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8828296306736714322, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -36225,7 +36236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.4358897
+      value: 4.465
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36263,7 +36274,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rollable Barrel Variant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8828296306736714322, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -37326,6 +37338,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1686696847}
     m_Modifications:
+    - target: {fileID: 2182415358997408331, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
+      propertyPath: m_Speed
+      value: 3.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2277355383687250661, guid: e0fe29e927d664f4dbf3012ade49bea0, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -47183,7 +47199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.4358892
+      value: 4.455
       objectReference: {fileID: 0}
     - target: {fileID: 8077564029063158685, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
       propertyPath: m_LocalPosition.z
@@ -47221,7 +47237,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rollable Barrel Variant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8828296306736714322, guid: fc87c8abc0df17f41924ad9fc8a2c987, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -54841,6 +54858,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: b42941f0db60db64e9648335e3f1f524, type: 3}
     - target: {fileID: 3561828712065376078, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
+      propertyPath: m_Speed
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3561828712065376078, guid: 41fd1527bf1f65b4898bdebe16600440, type: 3}
       propertyPath: m_BaseOffset
       value: 1.122
       objectReference: {fileID: 0}
@@ -55683,5 +55704,5 @@ SceneRoots:
   - {fileID: 640475739}
   - {fileID: 5348667907002458038}
   - {fileID: 623808043}
-  - {fileID: 2131433329}
   - {fileID: 1536053033}
+  - {fileID: 1509916114}
