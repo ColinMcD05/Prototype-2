@@ -726,7 +726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Yeehaw
   yeehaw: {fileID: -3498760636873759246, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  playerSpeaking: {fileID: 0}
+  playerSpeaking: {fileID: 5914434480905887963}
   yeehawClip: {fileID: 8300000, guid: d35192d37428c904f8e95a887ffecd7a, type: 3}
 --- !u!82 &2160422836909272930
 AudioSource:
