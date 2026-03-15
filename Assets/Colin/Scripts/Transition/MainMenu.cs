@@ -57,8 +57,8 @@ public class MainMenu : MonoBehaviour
     {
         while (canvas.alpha > 0)
         {
-            music.volume -= 0.001f;
-            canvas.alpha -= 0.0008f;
+            music.volume -= 0.4f * Time.deltaTime;
+            canvas.alpha -= 0.4f * Time.deltaTime;
             yield return null;
         }
     }
