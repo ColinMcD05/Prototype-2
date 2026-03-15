@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
             if (currentStam >= 0) //Only sprints if the player has stam to spend
             {
                 stamRecoveryTimer = maxStaminaTimer;
-                currentStam--;
+                currentStam -= 1 * Time.deltaTime;
                 moveSpeed = sprintSpeed;
             }
             else
@@ -119,11 +119,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (currentStam < maxStam && stamRecoveryTimer! > 0)
             {
-                stamRecoveryTimer--;
+                stamRecoveryTimer -= 1 * Time.deltaTime;
             }
             if (stamRecoveryTimer <= 0 && currentStam < maxStam)
             {
-                currentStam += staminaRecoverySpeed;
+                currentStam += staminaRecoverySpeed * Time.deltaTime;
             }
             staminaSlider.value = currentStam;
             moveSpeed = walkSpeed;
