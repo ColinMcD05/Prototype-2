@@ -18,6 +18,7 @@ TagManager:
   - Cactus
   - sheriffDoorTrigger
   - ExitDoor
+  - TumbleWeeds
   layers:
   - Default
   - TransparentFX

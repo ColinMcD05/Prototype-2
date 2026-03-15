@@ -58,6 +58,10 @@ public class GameOver : MonoBehaviour
                 playedClip = UnityEngine.Random.Range(0, cactus.Length);
                 audioSource.PlayOneShot(cactus[playedClip]);
                 return;
+            case "TumbleWeeds":
+                playedClip = UnityEngine.Random.Range(0, cactus.Length);
+                audioSource.PlayOneShot(cactus[playedClip]);
+                return;
         }
     }
 
