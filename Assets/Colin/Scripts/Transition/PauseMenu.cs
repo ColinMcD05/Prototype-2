@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Playables;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] PlayableDirector directior;
     [SerializeField] InputActionReference pauseAction;
     [SerializeField] GameObject pauseMenu;
     PlayerCam playerCam;
@@ -34,7 +36,14 @@ public class PauseMenu : MonoBehaviour
         {
             pauseMenu.SetActive(false);
             Time.timeScale = 1;
-            playerCam.enabled = true;
+            if (directior.playableGraph.IsPlaying())
+            {
+                playerCam.enabled = false;
+            }
+            else
+            {
+                playerCam.enabled = true;
+            }
         }
     }
 
