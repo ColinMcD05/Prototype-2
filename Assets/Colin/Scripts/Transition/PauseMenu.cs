@@ -36,7 +36,7 @@ public class PauseMenu : MonoBehaviour
         {
             pauseMenu.SetActive(false);
             Time.timeScale = 1;
-            if (directior.playableGraph.IsPlaying())
+            if (directior.state == PlayState.Playing)
             {
                 playerCam.enabled = false;
             }
@@ -52,7 +52,14 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         isPaused = !isPaused;
-        playerCam.enabled = true;
+        if (directior.state == PlayState.Playing)
+        {
+            playerCam.enabled = false;
+        }
+        else
+        {
+            playerCam.enabled = true;
+        }
     }
 
     public void Quitting()
